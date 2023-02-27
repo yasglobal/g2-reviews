@@ -11,6 +11,14 @@ jQuery(document).ready(function($) {
     // create reviews boxes
     $(this).children('.wp-g2-rev-data').children('.wp-g2-answer').each(function () { 
       var revnumb = $(this).attr('data-num');
+      var revname = $(this).attr('data-reviewer');
+      if ($(this).attr('data-iconurl')) {
+        var revicon = $(this).attr('data-iconurl');
+      } else { 
+        var revicon = revname.charAt(0);
+      }
+
+
       var answer1 = $(this).find('div[data-ans="1"]').html();
       var answer2 = $(this).find('div[data-ans="2"]').html();
       var answer3 = $(this).find('div[data-ans="3"]').html();
