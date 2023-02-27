@@ -89,7 +89,7 @@ class G2_Reviews_Admin {
 		$contact_link  = '<a href="https://www.yasglobal.com/#contact-us/" target="_blank">' .
 			__( 'Contact', 'g2-reviews' ) .
 		'</a>';
-		$settings_link = '<a href="admin.php?page=g2-reviews" target="_blank">' .
+		$settings_link = '<a href="admin.php?page=g2-reviews-settings" target="_blank">' .
 			__( 'Settings', 'g2-reviews' ) .
 		'</a>';
 
