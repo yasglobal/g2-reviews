@@ -129,12 +129,6 @@ class G2_Reviews_Settings {
 							</select>	
 						</td>
 					</tr>
-					<tr>
-						<th> Product Id : </th>
-						<td>
-							<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
-						</td>
-					</tr>
 				</tbody>
 			</table>
 
