@@ -61,9 +61,12 @@ class G2_Reviews_Settings {
 			</h2>
 
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
-			<p class="submit">
-				<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
-			</p>
+				<?php
+				wp_nonce_field( 'g2-reviews_' . $user_id, '_g2_reviews_nonce', true );
+				?>
+				<p class="submit">
+					<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
+				</p>
 			</form>
 		</div>
 		<?php
