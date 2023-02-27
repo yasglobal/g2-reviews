@@ -61,16 +61,20 @@ class G2_Reviews_Settings {
 			?>
 			
 			</h2>
+
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<p class="apikey">
 			<label for="g2-apikey">API Key:</label><br>				
 				<input type="input" name="g2_apikey" id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
+			
 			<p class="product-id">
 			    <label for="g2-productId">Product Id:</label><br>				
 				<input type="input" name="g2_productId" id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
+
+			
 			<p class="submit">
 				<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
