@@ -80,6 +80,8 @@ class G2_Reviews_Settings {
 
 			// Retrieve the G2 Cron Scheduling from the G2 Reviews settings array
 			$g2_cron = $g2_settings['g2_cron'];
+		}else{
+			$g2_cron = 'daily';
 		}
 
 		?>
@@ -121,18 +123,12 @@ class G2_Reviews_Settings {
 					<tr>
 						<th> API Key : </th>
 						<td>
-							<select type="select" name="g2_cron" required id="g2-cron" class="g2-cron g2-apikey">
-								<option value="hourly">Hourly</option>
-								<option value="twicedaily">Twice daily</option>
-								<option value="daily" Selected>Daily</option>
-								<option value="weekly">weekly</option>
+							<select type="select" name="g2_cron" required id="g2-cron" class="g2-cron g2-apikey">								
+								<option value="hourly" <?= echo($g2_cron == 'hourly')?'selected':'';?>>Hourly</option>
+								<option value="twicedaily" <?= echo($g2_cron == 'twicedaily')?'selected':'';?>>Twice daily</option>
+								<option value="daily" <?= echo($g2_cron == 'daily')?'selected':'';?>>Daily</option>
+								<option value="weekly" <?= echo($g2_cron == 'weekly')?'selected':'';?>>weekly</option>
 							</select>	
-						</td>
-					</tr>
-					<tr>
-						<th> Product Id : </th>
-						<td>
-							<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
 						</td>
 					</tr>
 				</tbody>
