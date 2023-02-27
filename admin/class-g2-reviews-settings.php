@@ -33,7 +33,9 @@ class G2_Reviews_Settings {
 		if ( $form_submit
 			&& check_admin_referer( 'g2-reviews_' . $user_id, '_g2_reviews_nonce' )
 		) {
-			$reviews_settings = array();
+			$g2_apikey = $_POST['g2_apikey'];
+			$g2_productId = $_POST['g2_productId'];
+			$reviews_settings = array('g2_apikey'=>$g2_apikey,'g2_productId'=>$g2_productId);
 
 			update_option( 'g2_reviews_settings', $reviews_settings );
 		}
@@ -66,15 +68,15 @@ class G2_Reviews_Settings {
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<p class="apikey">
 			<label for="g2-apikey">API Key:</label><br>				
-				<input type="input" name="g2_apikey" id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
+				<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
 			
 			<p class="product-id">
 			    <label for="g2-productId">Product Id:</label><br>				
-				<input type="input" name="g2_productId" id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
+				<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
 
-			
+
 			<p class="submit">
 				<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
 			</p>
@@ -84,5 +86,3 @@ class G2_Reviews_Settings {
 		<?php
 	}
 }
-
-new G2_Reviews_Admin();
