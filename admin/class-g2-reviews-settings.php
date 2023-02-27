@@ -90,17 +90,24 @@ class G2_Reviews_Settings {
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<?php wp_nonce_field( 'g2-reviews_' . $user_id, '_g2_reviews_nonce', true );?>
-			
-			<p class="apikey">
-			<label for="g2-apikey">API Key:</label><br>				
-				<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
-			</p>
-			
-			<p class="product-id">
-			    <label for="g2-productId">Product Id:</label><br>				
-				<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
-			</p>
 
+			<table class="http-auth-table">
+				<caption> Credentials </caption>
+				<tbody>
+					<tr>
+						<th> API Key : </th>
+						<td>
+							<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
+						</td>
+					</tr>
+					<tr>
+						<th> Product Id : </th>
+						<td>
+							<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
 
 			<p class="submit">
 				<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
