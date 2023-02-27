@@ -61,6 +61,7 @@ class G2_Reviews_Settings {
 			?>
 			
 			</h2>
+			
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<p class="apikey">
