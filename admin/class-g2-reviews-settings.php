@@ -33,7 +33,12 @@ class G2_Reviews_Settings {
 		if ( $form_submit
 			&& check_admin_referer( 'g2-reviews_' . $user_id, '_g2_reviews_nonce' )
 		) {
-			$reviews_settings = array();
+			$g2_apikey = filter_input( INPUT_POST, 'g2_apikey' );
+			$g2_productId = filter_input( INPUT_POST, 'g2_productId' );
+			$reviews_settings = array(
+				'g2_apikey' => $g2_apikey, // Enter your G2 API key here
+				'g2_productId' => $g2_productId, // Enter your G2 product ID here
+			 );
 
 			update_option( 'g2_reviews_settings', $reviews_settings );
 		}
@@ -50,6 +55,14 @@ class G2_Reviews_Settings {
 
 		$user_id     = get_current_user_id();
 		$g2_settings = get_option( 'g2_reviews_settings' );
+		$g2_apikey = '';
+		$g2_productId = '';
+
+		if($g2_settings){
+			$g2_settings = get_option( 'g2_reviews_settings' );
+			$g2_apikey = $g2_settings['g2_apikey'];
+			$g2_productId =$g2_settings['g2_productId'];
+		}
 
 		?>
 
@@ -59,19 +72,19 @@ class G2_Reviews_Settings {
 			<?php
 			esc_html_e( 'G2 Reviews Settings', 'g2-reviews' );
 			?>
-
+			
 			</h2>
 
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<p class="apikey">
-			<label for="g2-apikey">API Key:</label><br>
-				<input type="input" name="g2_apikey" id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
+			<label for="g2-apikey">API Key:</label><br>				
+				<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
 			</p>
-
+			
 			<p class="product-id">
-			    <label for="g2-productId">Product Id:</label><br>
-				<input type="input" name="g2_productId" id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e( 'Save Changes', 'g2-reviews' ); ?>" />
+			    <label for="g2-productId">Product Id:</label><br>				
+				<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
 			</p>
 
 
