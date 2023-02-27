@@ -35,9 +35,11 @@ class G2_Reviews_Settings {
 		) {
 			$g2_apikey = filter_input( INPUT_POST, 'g2_apikey' ); // Get G2 API key from POST request
 			$g2_productId = filter_input( INPUT_POST, 'g2_productId' ); // Get G2 product ID from POST request
+			$g2_cron = filter_input( INPUT_POST, 'g2_cron' ); // Get G2 product ID from POST request
 			$reviews_settings = array(
 				'g2_apikey' => $g2_apikey, // Enter your G2 API key here
 				'g2_productId' => $g2_productId, // Enter your G2 product ID here
+				'g2_cron' => $g2_cron, // Enter your Cron Scheduling here
 			);
 
 			update_option( 'g2_reviews_settings', $reviews_settings );
@@ -62,6 +64,7 @@ class G2_Reviews_Settings {
 		// Set the initial values for the G2 API key and product ID
 		$g2_apikey = '';
 		$g2_productId = '';
+		$g2_cron = '';
 
 		// Check if G2 Reviews settings exist in the options table
 		if($g2_settings){
@@ -73,7 +76,10 @@ class G2_Reviews_Settings {
 			$g2_apikey = $g2_settings['g2_apikey'];
 
 			// Retrieve the G2 product ID from the G2 Reviews settings array
-			$g2_productId = $g2_settings['g2_productId'];
+			$g2_productId = $g2_settings['g2_productId'];+
+
+			// Retrieve the G2 Cron Scheduling from the G2 Reviews settings array
+			$g2_cron = $g2_settings['g2_cron'];
 		}
 
 		?>
@@ -98,6 +104,29 @@ class G2_Reviews_Settings {
 						<th> API Key : </th>
 						<td>
 							<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
+						</td>
+					</tr>
+					<tr>
+						<th> Product Id : </th>
+						<td>
+							<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="http-auth-table">
+				<caption> Reviews Cron Scheduling </caption>
+				<tbody>
+					<tr>
+						<th> API Key : </th>
+						<td>
+							<select type="select" name="g2_cron" required id="g2-cron" class="g2-cron g2-apikey">
+								<option value="hourly">Hourly</option>
+								<option value="twicedaily">Twice daily</option>
+								<option value="daily" Selected>Daily</option>
+								<option value="weekly">weekly</option>
+							</select>	
 						</td>
 					</tr>
 					<tr>
