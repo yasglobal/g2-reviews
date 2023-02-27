@@ -90,6 +90,7 @@ class G2_Reviews_Settings {
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<?php wp_nonce_field( 'g2-reviews_' . $user_id, '_g2_reviews_nonce', true );?>
+			
 			<p class="apikey">
 			<label for="g2-apikey">API Key:</label><br>				
 				<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
