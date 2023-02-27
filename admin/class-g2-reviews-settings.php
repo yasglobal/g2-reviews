@@ -33,12 +33,12 @@ class G2_Reviews_Settings {
 		if ( $form_submit
 			&& check_admin_referer( 'g2-reviews_' . $user_id, '_g2_reviews_nonce' )
 		) {
-			$g2_apikey = filter_input( INPUT_POST, 'g2_apikey' );
-			$g2_productId = filter_input( INPUT_POST, 'g2_productId' );
+			$g2_apikey = filter_input( INPUT_POST, 'g2_apikey' ); // Get G2 API key from POST request
+			$g2_productId = filter_input( INPUT_POST, 'g2_productId' ); // Get G2 product ID from POST request
 			$reviews_settings = array(
 				'g2_apikey' => $g2_apikey, // Enter your G2 API key here
 				'g2_productId' => $g2_productId, // Enter your G2 product ID here
-			 );
+			);
 
 			update_option( 'g2_reviews_settings', $reviews_settings );
 		}
@@ -53,15 +53,27 @@ class G2_Reviews_Settings {
 	private function page_settings() {
 		$this->save_reviews_settings();
 
-		$user_id     = get_current_user_id();
+		// Get the current user's ID
+		$user_id = get_current_user_id();
+
+		// Get the G2 Reviews settings from the options table
 		$g2_settings = get_option( 'g2_reviews_settings' );
+
+		// Set the initial values for the G2 API key and product ID
 		$g2_apikey = '';
 		$g2_productId = '';
 
+		// Check if G2 Reviews settings exist in the options table
 		if($g2_settings){
+
+			// Get the G2 Reviews settings from the options table
 			$g2_settings = get_option( 'g2_reviews_settings' );
+
+			// Retrieve the G2 API key from the G2 Reviews settings array
 			$g2_apikey = $g2_settings['g2_apikey'];
-			$g2_productId =$g2_settings['g2_productId'];
+
+			// Retrieve the G2 product ID from the G2 Reviews settings array
+			$g2_productId = $g2_settings['g2_productId'];
 		}
 
 		?>
@@ -77,6 +89,7 @@ class G2_Reviews_Settings {
 
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
+			<?php wp_nonce_field( 'g2-reviews_' . $user_id, '_g2_reviews_nonce', true );?>
 			<p class="apikey">
 			<label for="g2-apikey">API Key:</label><br>				
 				<input type="password" name="g2_apikey" required id="g2-apikey" class="g2-field g2-apikey" value="<?php esc_html_e($g2_apikey); ?>" />
