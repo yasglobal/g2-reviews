@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
 							revicon +
 							"</span><span>" +
 							revname +
-							'</span></div><div class="rev-topic">' +
+							'</span></div><div class="rev-rate"><i/><i/><i/><i/><i/></div><div class="rev-topic">' +
 							revtopic +
 							'</div><div class="rev-q">' +
 							question1 +

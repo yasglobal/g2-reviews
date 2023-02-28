@@ -22,6 +22,8 @@
 	--user-icon-font-size: 30px;
 	--user-icon-font-weight: 600;
 
+	--star-color: gold;
+
 	--user-name-font-family: sans-serif;
 	--user-name-font-size: 18px;
 
@@ -62,6 +64,7 @@
 	border-radius: var(--box-radius);
 	padding: var(--box-padding);
 	box-shadow: var(--box-shadow);
+	position: relative;
 }
 
 .rev-user-icon {
@@ -94,6 +97,24 @@
 
 .rev-user-icon > span:first-child img {
 	width: 100%;
+}
+
+.rev-rate {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.rev-rate i {
+  color: var(--star-color);
+  text-shadow: 0 0 1px var(--star-color);
+}
+
+.rev-rate i:before {
+  content: "★";
+  font-style: normal;
+  font-size: 22px;
+  color: inherit;
 }
 
 .rev-topic {
