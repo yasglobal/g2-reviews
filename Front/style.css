@@ -1,7 +1,14 @@
 :root {
     --global-font: Georgia, 'Times New Roman', Times, serif;
+    --rev-container-width: 70%;
+    --rev-container-margin-top: 20px;
+    --rev-container-margin-bottom: 20px;
+    --rev-container-margin-left: auto;
+    --rev-container-margin-right: auto;
 
-    --box-width: 30%;
+    --box-style: row wrap;
+    /*--box-style: column wrap;*/
+    --box-width: 25.6%;
     --box-gap: 20px;
     --box-border: 1px solid #f1f1f1;
     --box-radius: 15px;
@@ -22,6 +29,7 @@
     --rev-topic-font-size: 20px;
     --rev-topic-font-weight: 600;
     --rev-topic-color: blue;
+    --rev-topic-clip-lines:2;
 
     --q-font-family:sans-serif;
     --q-font-size:16px;
@@ -30,6 +38,8 @@
     --a-font-family:system-ui;
     --a-font-size:14px;
     --a-font-weight:100;
+    --a-clip-lines:3;
+
 
 }
 
@@ -39,14 +49,16 @@
 
 .wp-g2-rev-front {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: var(--box-style);
     font-family: var(--global-font);
     gap: var(--box-gap);
     box-sizing: border-box;
+    width: var(--rev-container-width);
+    margin: var(--rev-container-margin-top) var(--rev-container-margin-right) var(--rev-container-margin-bottom) var(--rev-container-margin-left);
   }
 
   .wp-g2-rev-front > div {
-    width: var(--box-width);
+    flex: 0 0 var(--box-width);
     border: var(--box-border);
     border-radius: var(--box-radius);
     padding: var(--box-padding);
@@ -78,24 +90,44 @@
 	font-family: var(--user-name-font-family);
 	font-size: var(--user-name-font-size);
 	margin: 0 0 0 10px;
+    width: calc(100% - var(--user-icon-size))
 }
+
+.rev-user-icon > span:first-child img {
+    width: 100%;
+  }
 
 .rev-topic {
     font-family: var(--rev-topic-font-family);
     font-size: var(--rev-topic-font-size);
     font-weight: var(--rev-topic-font-weight);
     color: var(--rev-topic-color);
-    margin: 0 0 10px calc(var(--user-icon-size) + 10px);
+    /*margin: 0 0 10px calc(var(--user-icon-size) + 10px);*/
+    margin: 0 0 20px;
+    display:block;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--rev-topic-clip-lines);
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    height: 2em;
 }
 .rev-q {
     font-family: var(--q-font-family);
     font-size: var(--q-font-size);
     font-weight: var(--q-font-weight);
+    margin: 20px 0 5px;
 }
 .rev-a {
     font-family: var(--a-font-family);
     font-size: var(--a-font-size);
     font-weight: var(--a-font-weight);
+    line-height: 1.2em;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--a-clip-lines);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: calc(1.2em * var(--a-clip-lines));
   }
 
   
