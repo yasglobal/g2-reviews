@@ -43,6 +43,17 @@ class G2_Reviews_Settings {
 			);
 
 			update_option( 'g2_reviews_settings', $reviews_settings );
+
+            /**
+             * g2_reviews_cron function to run on Schedule time
+             */
+            $old_interval = wp_get_schedule( 'g2_reviews_cron' );  // Old interval for the g2_reviews_cron event
+            // Check when event is not schedule or Event Interval is updated so scheduled event
+            if(!$old_interval || $old_interval != $g2_cron){
+                wp_clear_scheduled_hook( 'g2_reviews_cron' );
+                wp_schedule_event( time(), $g2_cron, 'g2_reviews_cron' );
+                do_action( 'g2_reviews_cron' );
+            }    
 		}
 	}
 
@@ -80,7 +91,7 @@ class G2_Reviews_Settings {
 
 			// Retrieve the G2 Cron Scheduling from the G2 Reviews settings array
             if($g2_settings['g2_cron']){
-			$g2_cron = $g2_settings['g2_cron'];
+			    $g2_cron = $g2_settings['g2_cron'];
             }
 		}else{
 			$g2_cron = 'daily';
@@ -113,7 +124,7 @@ class G2_Reviews_Settings {
 					<tr>
 						<th> Product Id : </th>
 						<td>
-							<input type="password" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
+							<input type="text" name="g2_productId" required id="g2-productId" class="g2-field g2-productId" value="<?php esc_html_e($g2_productId); ?>" />
 						</td>
 					</tr>
 				</tbody>

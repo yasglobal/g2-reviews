@@ -64,6 +64,7 @@ class G2_Reviews {
 	 */
 	private function includes() {
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-admin.php';
+		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-cron.php';
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-settings.php';
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-widget.php';
 	}
