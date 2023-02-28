@@ -6,10 +6,14 @@
 	--rev-container-margin-left: auto;
 	--rev-container-margin-right: auto;
 
+	--arrow-color: #000;
+	--rev-thumb-size: 15px;
+	--rev-thumb-color: #000;
+
 	--box-style: row wrap;
 	/*--box-style: column wrap;*/
-	--box-width: 25.5%;
-	--box-gap: 20px;
+	--box-width: 100%;
+	--box-gap: 0;
 	--box-border: 1px solid #f1f1f1;
 	--box-radius: 15px;
 	--box-padding: 30px;
@@ -56,7 +60,11 @@
 		var(--rev-container-margin-bottom) var(--rev-container-margin-left);
 }
 
-.wp-g2-rev-front > div {
+.wp-g2-rev-front *{
+	box-sizing: border-box;
+}
+
+.wp-g2-rev-front > div[data-rev] {
 	flex: 0 0 var(--box-width);
 	border: var(--box-border);
 	border-radius: var(--box-radius);
@@ -127,4 +135,54 @@
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	height: calc(1.2em * var(--a-clip-lines));
+}
+
+
+/*-- Arrows Actions --*/
+.rev-arrows {
+  display: flex;
+  justify-content: flex-end;
+	width: 100%;
+}
+.rev-arrows span {
+  font-size: 30px;
+  color: var(--arrow-color);
+  transition: all 250ms ease;
+  cursor: pointer;
+	opacity:0.6;
+	display: inline-block;
+}
+.rev-arrows span:hover {
+	opacity:1;
+}
+.rev-arrows span:last-child {
+	margin-left:20px;
+}
+
+.rev-thumb {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.rev-thumb i{
+	width: var(--rev-thumb-size);
+	height: var(--rev-thumb-size);
+	background: var(--rev-thumb-color);
+	cursor:pointer;
+	opacity:0.6;
+	transition:all 250ms ease;
+	margin: 0 5px;
+  border-radius: 50%;
+}
+
+.rev-thumb i:hover,
+.rev-thumb i.active{
+	opacity:1;
+}
+
+.rev-thumb i.active{
+	opacity:1;
+	cursor:default;
 }
