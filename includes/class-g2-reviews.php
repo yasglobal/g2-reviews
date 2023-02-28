@@ -101,7 +101,7 @@ class G2_Reviews {
 			if ( $wpdb->has_cap( 'collation' ) ) {
 				$collate = $wpdb->get_charset_collate();
 			}
-			
+
 			$sql = "CREATE TABLE {$wpdb->prefix}g2_reviews (
 				id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 				star_rating VARCHAR(255),
@@ -112,6 +112,7 @@ class G2_Reviews {
 				user VARCHAR(255),
 				country_region VARCHAR(255),
 				other_attributes VARCHAR(255),
+				submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 				updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 				PRIMARY KEY (id)
 			) $collate";
@@ -120,6 +121,7 @@ class G2_Reviews {
 			dbDelta( $sql );
 		}
 	}
+	
 
 	/**
 	 * Loads the plugin language files to support different languages.
