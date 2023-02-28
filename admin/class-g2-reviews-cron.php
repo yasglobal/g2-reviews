@@ -96,40 +96,94 @@ class G2_Reviews_Cron {
           print_r($product_reviews);
           print '</pre>';
     
-      
+          $table_name = $wpdb->prefix . 'g2_reviews'; // define table name using WP database prefix
+          // check if product reviews are not empty
           if (!empty($product_reviews)) {      
+            $table_row == false; // set $table_row variable to false
             foreach ($product_reviews as $review) {
-              $review_entry = [];
-              if (isset($review->attributes)) {
-                $review_entry['attributes'] = serialize($review->attributes);
+
+              $review_entry = []; //define an empty array for review entry
+              $review_user = []; //define an empty array for review user
+              $review_address = []; //define an empty array for review address
+
+              if (isset($review->attributes)) { //check if review attributes are set
+                $review_entry['other_attributes'] = serialize($review->attributes);
                 if (!isset($review->attributes->star_rating)
                   || $review->attributes->star_rating < 4
                 ) {
                   continue;
                 }
       
+               // Add the star rating to the review entry
                 $review_entry['star_rating'] = $review->attributes->star_rating;
-                if (isset($review->attributes->country_name)) {
-                  $review_entry['country_name'] = $review->attributes->country_name;
-                }
-      
-                if (isset($review->attributes->submitted_at)) {
-                  $review_entry['created'] = strtotime($review->attributes->submitted_at);
-                }
-      
+
+                // Add the title, if present, to the review entry
                 if (isset($review->attributes->title)) {
-                  $review_entry['title'] = $review->attributes->title;
+                    $review_entry['title'] = $review->attributes->title;
                 }
-      
+
+                // Add the comment answers, if present, to the review entry
+                if (isset($review->attributes->comment_answers)) {
+                    $review_entry['comment_answers'] = $review->attributes->comment_answers;
+                }
+
+                // Add the secondary answers, if present, to the review entry
+                if (isset($review->attributes->secondary_answers)) {
+                    $review_entry['secondary_answers'] = $review->attributes->secondary_answers;
+                }
+
+                // Add the verified current user status, if present, to the review entry
+                if (isset($review->attributes->verified_current_user)) {
+                    $review_entry['verified_current_user'] = $review->attributes->verified_current_user;
+                }
+
+                // Add the user ID, if present, to the user array
+                if (isset($review->attributes->user_id)) {
+                    $review_user['user_id'] = $review->attributes->user_id;
+                }
+
+                // Add the user name, if present, to the user array
+                if (isset($review->attributes->user_name)) {
+                    $review_user['user_name'] = $review->attributes->user_name;
+                }
+
+                // Add the user image URL, if present, to the user array
+                if (isset($review->attributes->user_image_url)) {
+                    $review_user['user_image_url'] = $review->attributes->user_image_url;
+                }
+                
+                // Add the country name, if present, to the address array
+                if (isset($review->attributes->country_name)) {
+                    $review_address['country_name'] = $review->attributes->country_name;
+                }
+
+                // Add the regions, if present, to the address array
+                if (isset($review->attributes->regions)) {
+                    $review_address['regions'] = $review->attributes->regions;
+                }
+                
+                // Add the submitted_at timestamp, if present, to the review entry
+                if (isset($review->attributes->submitted_at)) {
+                    $review_entry['submitted_at'] = strtotime($review->attributes->submitted_at);
+                }
+                
+                 // Add the updated_at timestamp, if present, to the review entry
                 if (isset($review->attributes->updated_at)) {
-                  $review_entry['updated'] = strtotime($review->attributes->updated_at);
+                  $review_entry['updated_at'] = strtotime($review->attributes->updated_at);
                 }
-      
-                if (!empty($review_entry)) {
-                  $database->truncate($new_table_name)->execute();
-                  $database->insert($new_table_name)
-                    ->fields($review_entry)
-                    ->execute();
+
+                $review_entry['country_region'] = $review_address; // set country region to review address
+                $review_entry['user'] = $review_user; // set user to review user
+                
+                global $wpdb;
+                if (!empty($review_entry)) { // check if review entry is not empty
+                  if($table_row == false){ // Check if there is any row in the table
+                    $wpdb->query( "DELETE FROM $table_name" ); // Delete all rows from the table
+                    $table_row = true;
+                  }
+                   // Insert review entry into the table
+                  $wpdb->insert( $table_name, $review_entry );
+
                 }
               }
             }
