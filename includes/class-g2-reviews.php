@@ -101,14 +101,7 @@ class G2_Reviews {
 			if ( $wpdb->has_cap( 'collation' ) ) {
 				$collate = $wpdb->get_charset_collate();
 			}
-
-			$sql = "CREATE TABLE {$wpdb->prefix}g2_reviews (
-				id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-				PRIMARY KEY (id)
-			) $collate";
-			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
-			dbDelta( $sql );
-
+			
 			$sql = "CREATE TABLE {$wpdb->prefix}g2_reviews (
 				id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 				star_rating VARCHAR(255),
