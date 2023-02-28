@@ -76,10 +76,12 @@ class G2_Reviews_Settings {
 			$g2_apikey = $g2_settings['g2_apikey'];
 
 			// Retrieve the G2 product ID from the G2 Reviews settings array
-			$g2_productId = $g2_settings['g2_productId'];+
+			$g2_productId = $g2_settings['g2_productId'];
 
 			// Retrieve the G2 Cron Scheduling from the G2 Reviews settings array
+            if($g2_settings['g2_cron']){
 			$g2_cron = $g2_settings['g2_cron'];
+            }
 		}else{
 			$g2_cron = 'daily';
 		}
