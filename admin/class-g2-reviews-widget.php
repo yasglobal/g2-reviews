@@ -57,6 +57,7 @@ class G2_Reviews_Widget extends WP_Widget
 		echo $args['after_widget'];
 	}
 
+
 	public function form( $instance ) {
 		// Output the widget settings form
 		$title = isset( $instance['title'] ) ? $instance['title'] : '';
