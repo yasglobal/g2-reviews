@@ -2,28 +2,26 @@ jQuery(document).ready(function ($) {
 	$(".wp-g2-reviews").each(function () {
 		var current = $(this);
 
-		// get question
-		var question1 = $(this).find('div[data-qus="1"]').html();
-		var question2 = $(this).find('div[data-qus="2"]').html();
-		var question3 = $(this).find('div[data-qus="3"]').html();
-
 		// create reviews boxes
 		$(this)
-			.children(".wp-g2-rev-data")
-			.children(".wp-g2-answer")
-			.each(function () {
-				var revnumb = $(this).attr("data-num");
-				var revtopic = $(this).attr("data-topic");
-				var revname = $(this).attr("data-reviewer");
-				if ($(this).attr("data-iconurl")) {
-					var revicon = $(this).attr("data-iconurl");
-					var revicon = '<img src="' + revicon + '">';
+    .children(".wp-g2-rev-data")
+    .children(".wp-g2-answer")
+    .each(function () {
+      var revnumb = $(this).attr("data-num");
+      var revtopic = $(this).attr("data-topic");
+      var revname = $(this).attr("data-reviewer");
+      if ($(this).attr("data-iconurl")) {
+        var revicon = $(this).attr("data-iconurl");
+        var revicon = '<img src="' + revicon + '">';
 				} else {
-					var revicon = revname.substring(0, 1);
+          var revicon = revname.substring(0, 1);
 				}
-
+        
+        var question1 = $(this).find('div[data-qus="1"]').html();
 				var answer1 = $(this).find('div[data-ans="1"]').html();
+        var question2 = $(this).find('div[data-qus="2"]').html();
 				var answer2 = $(this).find('div[data-ans="2"]').html();
+        var question3 = $(this).find('div[data-qus="3"]').html();
 				var answer3 = $(this).find('div[data-ans="3"]').html();
 				$(current)
 					.children(".wp-g2-rev-front")
