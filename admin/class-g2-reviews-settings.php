@@ -129,7 +129,6 @@ class G2_Reviews_Settings {
 					</tr>
 				</tbody>
 			</table>
-			
 
 			<table class="g2-admin-table">
 				<caption> Reviews Cron Scheduling </caption>

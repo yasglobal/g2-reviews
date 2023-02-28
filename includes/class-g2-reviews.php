@@ -20,6 +20,13 @@ class G2_Reviews {
 	 */
 	public $version = '0.0.1';
 
+	 /**
+	 * G2 Reviews Table.
+	 *
+	 * @var string
+	 */
+	public $table = 'g2_reviews';
+
 	/**
 	 * Class constructor.
 	 */
@@ -36,9 +43,11 @@ class G2_Reviews {
 	 * @access private
 	 */
 	private function define_constants() {
+		global $wpdb;
 		$this->define( 'G2_REVIEWS_BASENAME', plugin_basename( G2_REVIEWS_FILE ) );
 		$this->define( 'G2_REVIEWS_PATH', plugin_dir_path( G2_REVIEWS_FILE ) );
 		$this->define( 'G2_REVIEWS_VERSION', $this->version );
+		$this->define( 'G2_REVIEWS_TABLE', $wpdb->prefix . $this->table );
 	}
 
 	/**
@@ -121,7 +130,7 @@ class G2_Reviews {
 			dbDelta( $sql );
 		}
 	}
-	
+
 
 	/**
 	 * Loads the plugin language files to support different languages.

@@ -96,7 +96,7 @@ class G2_Reviews_Cron {
           print_r($product_reviews);
           print '</pre>';
     
-          $table_name = $wpdb->prefix . 'g2_reviews'; // define table name using WP database prefix
+          $table_name = G2_REVIEWS_TABLE; // define table name using WP database prefix
           // check if product reviews are not empty
           if (!empty($product_reviews)) {      
             $table_row == false; // set $table_row variable to false
