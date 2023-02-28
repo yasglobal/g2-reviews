@@ -99,7 +99,7 @@ class G2_Reviews_Settings {
 			<form enctype="multipart/form-data" action="" method="POST" id="g2-reviews">
 			<?php wp_nonce_field( 'g2-reviews_' . $user_id, '_g2_reviews_nonce', true );?>
 
-			<table class="http-auth-table">
+			<table class="g2-admin-table">
 				<caption> Credentials </caption>
 				<tbody>
 					<tr>
@@ -117,7 +117,7 @@ class G2_Reviews_Settings {
 				</tbody>
 			</table>
 
-			<table class="http-auth-table">
+			<table class="g2-admin-table">
 				<caption> Reviews Cron Scheduling </caption>
 				<tbody>
 					<tr>
