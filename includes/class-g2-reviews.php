@@ -108,6 +108,23 @@ class G2_Reviews {
 			) $collate";
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 			dbDelta( $sql );
+
+			$sql = "CREATE TABLE {$wpdb->prefix}g2_reviews (
+				id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+				star_rating VARCHAR(255),
+				title VARCHAR(255),
+				comment_answers VARCHAR(255),
+				secondary_answers VARCHAR(255),
+				verified_current_user BOOLEAN,
+				user VARCHAR(255),
+				country_region VARCHAR(255),
+				other_attributes VARCHAR(255),
+				updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+				PRIMARY KEY (id)
+			) $collate";
+		
+			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+			dbDelta( $sql );
 		}
 	}
 
