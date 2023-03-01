@@ -76,6 +76,7 @@ class G2_Reviews {
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-cron.php';
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-settings.php';
 		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-widget.php';
+		include_once G2_REVIEWS_PATH . 'admin/class-g2-reviews-shortcode.php';
 	}
 
 
@@ -125,7 +126,7 @@ class G2_Reviews {
 				updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 				PRIMARY KEY (id)
 			) $collate";
-		
+
 			require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 			dbDelta( $sql );
 		}
