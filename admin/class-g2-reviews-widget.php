@@ -14,8 +14,8 @@ class G2_Reviews_Widget extends WP_Widget
 	function __construct()
 	{
 		parent::__construct(
-			'my_reviews',
-			__('My Reviews', 'text_domain'),
+			'g2_reviews',
+			__('G2 Reviews', 'text_domain'),
 			array('description' => __('Your plugin widget description.', 'text_domain'),)
 		);
 	}
@@ -41,18 +41,7 @@ class G2_Reviews_Widget extends WP_Widget
 		// Output the widget settings form
 		$title = isset($instance['title']) ? $instance['title'] : '';
 		$review_limit = isset($instance['review_limit']) ? $instance['review_limit'] : '';
-		$options = array(
-			'1',
-			'2',
-			'3',
-			'4',
-			'5',
-			'6',
-			'7',
-			'8',
-			'9',
-			'10',
-		);
+		$options = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10',);
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>

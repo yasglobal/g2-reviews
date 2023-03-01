@@ -21,5 +21,8 @@ function my_shortcode($atts)
 	return $output;
 }
 
+
 add_shortcode('g2reviews' , 'my_shortcode');
+wp_enqueue_style('G2-style', '/wp-content/plugins/g2-reviews/assets/style.css', array(), '20190328');
+wp_enqueue_script('G2-script', '/wp-content/plugins/g2-reviews/assets/script.js', array(), '20161114', true);
 
