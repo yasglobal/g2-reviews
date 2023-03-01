@@ -13,11 +13,11 @@
 	--box-gap: 20px;
 	--box-border: 1px solid #bfbfbf;
 	--box-radius: 10px;
-	--box-padding: 40px 30px 30px;
+	--box-padding: 15px;
 	--box-shadow: 0 0 5px #c3c3c3;
 	--box-background: #fff;
 
-	--user-icon-size: 50px;
+	--user-icon-size: 42px;
 	--user-icon-background: #ccc;
 	--user-icon-shadow-color: green;
 	--user-icon-font-family: sans-serif;
@@ -81,7 +81,7 @@
 		);
 	border: var(--box-border);
 	border-radius: var(--box-radius);
-	padding: var(--box-padding);
+	padding: var(--box-padding) calc(var(--box-padding) * 2);
 	box-shadow: var(--box-shadow);
 	background: var(--box-background);
 	position: relative;
@@ -90,29 +90,32 @@
 }
 
 .rev-verified-user:before {
-	content: "Verified User";
-	position: absolute;
-	top: 50px;
-	font-size: 10px;
-	color: #fff;
-	letter-spacing: 1.1px;
-	left: 5px;
-	transform: rotate(-45deg);
-	transform-origin: left;
-	z-index: 2;
+  content: "Verified User";
+  position: absolute;
+  top: calc(var(--box-padding) + var(--user-icon-size) + 2px);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  left: calc(var(--box-padding) + var(--user-icon-size) + 30px);
+  transform-origin: left;
+  z-index: 2;
 }
 
 .rev-verified-user:after {
-	content: "";
-	position: absolute;
-	width: 120px;
-	height: 60px;
-	background: var(--star-color);
-	top: -10px;
-	left: -60px;
-	transform: rotate(-45deg);
-	transform-origin: top;
-	z-index: 1;
+	content: "✔";
+  font-size: 11px;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: calc(var(--box-padding) + var(--user-icon-size));
+  left: calc(var(--box-padding) + var(--user-icon-size) + 10px);
+  background: darkgreen;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .rev-user-icon {
@@ -156,6 +159,7 @@
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+	max-width: calc(100% - 95px);
 }
 
 .rev-user-icon > time {
@@ -166,7 +170,7 @@
 
 .rev-rate {
 	position: absolute;
-	top: 5px;
+	top: calc(var(--box-padding));
 	right: 15px;
 }
 
