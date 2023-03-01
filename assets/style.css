@@ -1,6 +1,6 @@
 :root .wp-g2-reviews {
 	--global-font: georgia, "Times New Roman", Times, serif;
-	--rev-container-width: 70%;
+	--rev-container-width: 100%;
 	--rev-container-margin-top: 20px;
 	--rev-container-margin-bottom: 20px;
 	--rev-container-margin-left: auto;
@@ -8,7 +8,8 @@
 
 	--box-style: row wrap;
 	/*--box-style: column wrap;*/
-	--box-width: 25.5%;
+	--box-number: 3;
+	--box-width: calc(100% / var(--box-number));
 	--box-gap: 20px;
 	--box-border: 1px solid #f1f1f1;
 	--box-radius: 15px;
@@ -48,10 +49,6 @@
 	--a-clip-lines: 3;
 }
 
-.wp-g2-rev-data {
-	display: none;
-}
-
 .wp-g2-rev-front {
 	display: flex;
 	flex-flow: var(--box-style);
@@ -61,16 +58,22 @@
 	width: var(--rev-container-width);
 	margin: var(--rev-container-margin-top) var(--rev-container-margin-right)
 		var(--rev-container-margin-bottom) var(--rev-container-margin-left);
+	box-sizing: border-box;
+}
+
+.wp-g2-rev-front *{
+	box-sizing: border-box;
 }
 
 .wp-g2-rev-front > div[data-rev] {
-	flex: 0 0 var(--box-width);
+	flex: 0 0 calc(var(--box-width) - ((var(--box-gap) * var(--box-number)) / (var(--box-number) + 1.5)));
 	border: var(--box-border);
 	border-radius: var(--box-radius);
 	padding: var(--box-padding);
 	box-shadow: var(--box-shadow);
 	position: relative;
 	overflow: hidden;
+	min-width: 280px;
 }
 
 .rev-verified-user:before {
