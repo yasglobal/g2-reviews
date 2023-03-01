@@ -3,8 +3,12 @@
  * G2 Reviews View.
  *
  */
-?>
+global $wpdb;
 
+$page_data = $wpdb->get_results('SELECT * FROM wp_g2_reviews');
+print_r($page_data);
+
+?>
 <div class="wp-g2-reviews">
 	<div class="wp-g2-rev-front">
 		<?php
@@ -30,7 +34,7 @@
 			}
 		} else {
 			for ($i = 0; $i < $atts['review-items']; $i++) {
-				$output = '<div data-rev="' . $i + 1 . '" class="rev-verified-user" style="width:' . esc_html($atts['width']) . 'px">
+				$output .= '<div data-rev="' . $i + 1 . '" class="rev-verified-user" style="width:' . esc_html($atts['width']) . 'px">
 					  <div class="rev-user-icon">
 						<span><img src="https://www.sageintacct.com/themes/custom/sageintacct/images/g2-anonymous-avatar.svg"></span>
 						<span>Verified User in Health, Wellness and Fitness</span>
