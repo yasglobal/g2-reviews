@@ -12,6 +12,7 @@
 					  <div class="rev-user-icon">
 						<span><img src="https://www.sageintacct.com/themes/custom/sageintacct/images/g2-anonymous-avatar.svg"></span>
 						<span>Verified User in Health, Wellness and Fitness</span>
+						<time datetime="2021-09-23">23 Sep 2021</time>
 					  </div>
 					  <div class="rev-rate star-3-5"> <i></i> <i></i> <i></i> <i></i> <i></i> </div>
 					  <div class="rev-topic">Reliable and always available tool</div>
