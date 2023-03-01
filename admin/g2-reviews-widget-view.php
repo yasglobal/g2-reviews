@@ -8,7 +8,7 @@
 <div class="wp-g2-reviews">
 	<div class="wp-g2-rev-front">
 		<?php for ($i = 0; $i < $instance['review_limit']; $i++) {
-			echo '<div data-rev="' . $i + 1 . '">
+			echo '<div data-rev="' . $i + 1 . '" class="rev-verified-user">
 					  <div class="rev-user-icon">
 						<span><img src="https://www.sageintacct.com/themes/custom/sageintacct/images/g2-anonymous-avatar.svg"></span>
 						<span>Verified User in Health, Wellness and Fitness</span>
