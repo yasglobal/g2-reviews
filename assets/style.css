@@ -70,7 +70,7 @@
 	box-sizing: border-box;
 }
 
-.wp-g2-rev-front > div[data-rev] {
+.wp-g2-rev-front > div {
 	flex: 0 0
 		calc(
 			var(--box-width) -
