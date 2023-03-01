@@ -1,5 +1,5 @@
 :root .wp-g2-reviews {
-	--global-font: georgia, "Times New Roman", Times, serif;
+	--global-font: sans-serif , Times, serif;
 	--rev-container-width: 100%;
 	--rev-container-margin-top: 20px;
 	--rev-container-margin-bottom: 20px;
@@ -30,13 +30,15 @@
 	--user-name-font-family: sans-serif;
 	--user-name-font-size: 16px;
 
-	--user-date-font-family: sans-serif;
-	--user-date-font-size: 14px;
+	--user-date-font-family: monospace;
+	--user-date-font-size: 12px;
+	--user-date-font-weight: 600;
 
 	--rev-topic-font-family: inherit;
-	--rev-topic-font-size: 20px;
+	--rev-topic-font-size: 16px;
 	--rev-topic-font-weight: 600;
-	--rev-topic-color: blue;
+	--rev-topic-letter-spacing: 1px;
+	--rev-topic-color: #246f9e;
 	--rev-topic-clip-lines: 2;
 
 	--q-font-family: sans-serif;
@@ -147,6 +149,7 @@
 .rev-user-icon > time {
 	font-family: var(--user-date-font-family);
 	font-size: var(--user-date-font-size);
+	font-weight: var(--user-date-font-weight);
 }
 
 .rev-rate {
@@ -215,6 +218,7 @@
 	font-family: var(--rev-topic-font-family);
 	font-size: var(--rev-topic-font-size);
 	font-weight: var(--rev-topic-font-weight);
+	letter-spacing: var(--rev-topic-letter-spacing);
 	color: var(--rev-topic-color);
 	/*margin: 0 0 10px calc(var(--user-icon-size) + 10px);*/
 	margin: 0 0 20px;
@@ -223,7 +227,7 @@
 	-webkit-line-clamp: var(--rev-topic-clip-lines);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	height: 2em;
+	height: 2.2em;
 }
 .rev-q {
 	font-family: var(--q-font-family);
