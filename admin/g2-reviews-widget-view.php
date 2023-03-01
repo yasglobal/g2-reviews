@@ -18,12 +18,14 @@
 					  </div>
 					  <div class="rev-rate star-3-5"> <i></i> <i></i> <i></i> <i></i> <i></i> </div>
 					  <div class="rev-topic">Reliable and always available tool</div>
-					  <div class="rev-q">What do you like best about the product?</div>
-					  <div class="rev-a">The chief benefits of using Sage Intacct are the product features and capabilities of the software.</div>
-					  <div class="rev-q">What do you dislike about the product?</div>
-					  <div class="rev-a">There is a learning curve to Sage Intacct, as it takes a while to get used to report-building features, import data template structures, etc.</div>
-					  <div class="rev-q">What problems is the product solving and how is that benefiting you?</div>
-					  <div class="rev-a">Automation. As I use features that improve automation, I see a massive benefit for my company.</div>
+					  <div class="rev-qa-scroll">
+							<div class="rev-q">What do you like best about the product?</div>
+							<div class="rev-a">The chief benefits of using Sage Intacct are the product features and capabilities of the software.</div>
+							<div class="rev-q">What do you dislike about the product?</div>
+							<div class="rev-a">There is a learning curve to Sage Intacct, as it takes a while to get used to report-building features, import data template structures, etc.</div>
+							<div class="rev-q">What problems is the product solving and how is that benefiting you?</div>
+							<div class="rev-a">Automation. As I use features that improve automation, I see a massive benefit for my company.</div>
+						</div>
 					</div>';
 			}
 		} else {
@@ -36,12 +38,14 @@
 					  </div>
 					  <div class="rev-rate star-3-5"> <i></i> <i></i> <i></i> <i></i> <i></i> </div>
 					  <div class="rev-topic">Reliable and always available tool</div>
-					  <div class="rev-q">What do you like best about the product?</div>
-					  <div class="rev-a">The chief benefits of using Sage Intacct are the product features and capabilities of the software.</div>
-					  <div class="rev-q">What do you dislike about the product?</div>
-					  <div class="rev-a">There is a learning curve to Sage Intacct, as it takes a while to get used to report-building features, import data template structures, etc.</div>
-					  <div class="rev-q">What problems is the product solving and how is that benefiting you?</div>
-					  <div class="rev-a">Automation. As I use features that improve automation, I see a massive benefit for my company.</div>
+						<div class="rev-qa-scroll">
+							<div class="rev-q">What do you like best about the product?</div>
+							<div class="rev-a">The chief benefits of using Sage Intacct are the product features and capabilities of the software.</div>
+							<div class="rev-q">What do you dislike about the product?</div>
+							<div class="rev-a">There is a learning curve to Sage Intacct, as it takes a while to get used to report-building features, import data template structures, etc.</div>
+							<div class="rev-q">What problems is the product solving and how is that benefiting you?</div>
+							<div class="rev-a">Automation. As I use features that improve automation, I see a massive benefit for my company.</div>
+						</div>
 					</div>';
 			}
 		} ?>
