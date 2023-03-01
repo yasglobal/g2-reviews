@@ -19,7 +19,6 @@ class G2_Reviews_Settings {
 	public function __construct() {
 		$this->page_settings();
 	}
-
 	/**
 	 * Save Reviews Settings.
 	 *
@@ -53,7 +52,7 @@ class G2_Reviews_Settings {
                 wp_clear_scheduled_hook( 'g2_reviews_cron' );
                 wp_schedule_event( time(), $g2_cron, 'g2_reviews_cron' );
                 do_action( 'g2_reviews_cron' );
-            }    
+            }
 		}
 	}
 
@@ -105,7 +104,7 @@ class G2_Reviews_Settings {
 			<?php
 			esc_html_e( 'G2 Reviews Settings', 'g2-reviews' );
 			?>
-			
+
 			</h2>
 
 			<p><?php esc_html_e( 'We can get maximum 20 reviews', 'g2-reviews' );	?></p>
@@ -141,7 +140,7 @@ class G2_Reviews_Settings {
 								<option value="twicedaily" <?php echo($g2_cron == 'twicedaily')?'selected':'';?>>Twice daily</option>
 								<option value="daily" <?php echo($g2_cron == 'daily')?'selected':'';?>>Daily</option>
 								<option value="weekly" <?php echo($g2_cron == 'weekly')?'selected':'';?>>weekly</option>
-							</select>	
+							</select>
 						</td>
 					</tr>
 				</tbody>
