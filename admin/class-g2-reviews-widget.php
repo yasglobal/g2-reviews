@@ -30,6 +30,7 @@ class G2_Reviews_Widget extends WP_Widget
 		if (!empty($title)) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
+		$fileCall = 'widget';
 		include_once G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
 		echo $args['after_widget'];
 	}
