@@ -22,7 +22,9 @@
 	--user-icon-font-size: 30px;
 	--user-icon-font-weight: 600;
 
+	--star-color-off: #fff;
 	--star-color: gold;
+	--star-color-outline: rgba(0,0,0,0.23);
 
 	--user-name-font-family: sans-serif;
 	--user-name-font-size: 18px;
@@ -106,9 +108,53 @@
 }
 
 .rev-rate i {
-  color: var(--star-color);
-  text-shadow: 0 0 1px var(--star-color);
+  color: var(--star-color-off);
+	-webkit-text-stroke: 1px var(--star-color-outline);
 }
+
+.star-1 i:nth-child(1),
+.star-1-5 i:nth-child(1),
+
+.star-2 i:nth-child(1),
+.star-2-5 i:nth-child(1),
+.star-2 i:nth-child(2),
+.star-2-5 i:nth-child(2),
+
+.star-3 i:nth-child(1),
+.star-3-5 i:nth-child(1),
+.star-3 i:nth-child(2),
+.star-3-5 i:nth-child(2),
+.star-3 i:nth-child(3),
+.star-3-5 i:nth-child(3),
+
+.star-4 i:nth-child(1),
+.star-4-5 i:nth-child(1),
+.star-4 i:nth-child(2),
+.star-4-5 i:nth-child(2),
+.star-4 i:nth-child(3),
+.star-4-5 i:nth-child(3),
+.star-4 i:nth-child(4),
+.star-4-5 i:nth-child(4),
+
+.star-5 i:nth-child(1),
+.star-5 i:nth-child(2),
+.star-5 i:nth-child(3),
+.star-5 i:nth-child(4),
+.star-5 i:nth-child(5){
+	color: var(--star-color);
+}
+
+.star-1-5 i:nth-child(2),
+.star-2-5 i:nth-child(3),
+.star-3-5 i:nth-child(4),
+.star-4-5 i:nth-child(5) {
+  background: linear-gradient(to right, var(--star-color) 50%, #fff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 .rev-rate i:before {
   content: "★";
