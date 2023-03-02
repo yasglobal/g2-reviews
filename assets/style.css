@@ -9,7 +9,12 @@
 	--box-style: row wrap;
 	/*--box-style: column wrap;*/
 	--box-number: 3;
-	--box-width: calc(100% / var(--box-number));
+	--box-width: calc(
+		(100% / var(--box-number)) -
+		(var(--box-gap)) +
+		(var(--box-gap) / var(--box-number)) -
+		3px
+	);
 	--box-gap: 20px;
 	--box-border: 1px solid #bfbfbf;
 	--box-radius: 10px;
@@ -17,7 +22,7 @@
 	--box-shadow: 0 0 5px #c3c3c3;
 	--box-background: #fff;
 
-	--user-icon-size: 42px;
+	--user-icon-size: 40px;
 	--user-icon-background: #ccc;
 	--user-icon-shadow-color: green;
 	--user-icon-font-family: sans-serif;
@@ -30,10 +35,12 @@
 
 	--user-name-font-family: sans-serif;
 	--user-name-font-size: 16px;
+	--user-name-font-weight: 700;
 
-	--user-date-font-family: monospace;
+	--user-date-font-family: inherit;
 	--user-date-font-size: 12px;
-	--user-date-font-weight: 600;
+	--user-date-font-weight: normal;
+  --user-date-color: #888;
 
 	--rev-topic-font-family: inherit;
 	--rev-topic-font-size: 16px;
@@ -71,14 +78,11 @@
 }
 
 .wp-g2-rev-front > div {
-	flex: 0 0
-		calc(
-			var(--box-width) -
-				(
-					(var(--box-gap) * var(--box-number)) /
-						(var(--box-number) + 1.5)
-				)
-		);
+  width: calc(
+		var(--box-width) + 
+		(var(--box-number) - 1) *
+		1px
+		 );
 	border: var(--box-border);
 	border-radius: var(--box-radius);
 	padding: var(--box-padding) calc(var(--box-padding) * 2);
@@ -144,6 +148,7 @@
 	font-family: var(--user-icon-font-family);
 	font-size: var(--user-icon-font-size);
 	font-weight: var(--user-icon-font-weight);
+	overflow: hidden;
 }
 
 .rev-user-icon > span:first-child img {
@@ -160,18 +165,23 @@
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	max-width: calc(100% - 95px);
+  font-weight: var(--user-name-font-weight);
+  padding-top: 2px;
 }
 
 .rev-user-icon > time {
 	font-family: var(--user-date-font-family);
 	font-size: var(--user-date-font-size);
 	font-weight: var(--user-date-font-weight);
+  letter-spacing: 1px;
+  color: var(--user-date-color);
 }
 
 .rev-rate {
 	position: absolute;
 	top: calc(var(--box-padding));
 	right: 15px;
+	letter-spacing: -3px;
 }
 
 .rev-rate i {
@@ -231,19 +241,18 @@
 	letter-spacing: var(--rev-topic-letter-spacing);
 	color: var(--rev-topic-color);
 	/*margin: 0 0 10px calc(var(--user-icon-size) + 10px);*/
-	margin: 0 0 20px;
+	margin: 0;
 	display: block;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--rev-topic-clip-lines);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	height: 2.2em;
 	line-height: 1.3em;
-	height: 2.5em;
 }
 .rev-qa-scroll {
 	overflow: auto;
 	height: var(--qa-height);
+  padding-right: 5px;
 	scrollbar-width: thin;
 }
 .rev-qa-scroll::-webkit-scrollbar {
