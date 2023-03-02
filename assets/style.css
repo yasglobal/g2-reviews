@@ -1,5 +1,5 @@
 :root .wp-g2-reviews {
-	--global-font: sans-serif, Times, serif;
+	--global-font: inherit;
 	--rev-container-width: 100%;
 	--rev-container-margin-top: 20px;
 	--rev-container-margin-bottom: 20px;
@@ -10,11 +10,10 @@
 	/*--box-style: column wrap;*/
 	--box-number: 3;
 	--box-width: calc(
-		(100% / var(--box-number)) -
-		(var(--box-gap)) +
-		(var(--box-gap) / var(--box-number)) -
-		3px
-	);
+    (100% / var(--box-number)) +
+    (var(--box-gap) / var(--box-number)) -
+    var(--box-gap)
+    );
 	--box-gap: 20px;
 	--box-border: 1px solid #bfbfbf;
 	--box-radius: 10px;
@@ -22,7 +21,7 @@
 	--box-shadow: 0 0 5px #c3c3c3;
 	--box-background: #fff;
 
-	--user-icon-size: 40px;
+	--user-icon-size: 50px;
 	--user-icon-background: #ccc;
 	--user-icon-shadow-color: green;
 	--user-icon-font-family: sans-serif;
@@ -45,7 +44,7 @@
 	--rev-topic-font-family: inherit;
 	--rev-topic-font-size: 16px;
 	--rev-topic-font-weight: 600;
-	--rev-topic-letter-spacing: 1px;
+	--rev-topic-letter-spacing: 0;
 	--rev-topic-color: #246f9e;
 	--rev-topic-clip-lines: 2;
 
@@ -78,35 +77,47 @@
 }
 
 .wp-g2-rev-front > div {
-  width: calc(
-		var(--box-width) + 
-		(var(--box-number) - 1) *
-		1px
-		 );
+  width: var(--box-width);
 	border: var(--box-border);
 	border-radius: var(--box-radius);
-	padding: var(--box-padding) calc(var(--box-padding) * 2);
+	padding: var(--box-padding) calc(var(--box-padding) * 1);
 	box-shadow: var(--box-shadow);
 	background: var(--box-background);
 	position: relative;
 	overflow: hidden;
 	min-width: 280px;
 }
+@media(min-width:992px){
+  .rev-user:after {
+    content: "";
+    height: calc(100% - 110px);
+    width: 15px;
+    position: absolute;
+    bottom: var(--box-padding);
+    right: 12px;
+    background: linear-gradient(to left, #fff 60%, transparent);
+    transition:all 250ms 500ms ease;
+  }
 
+  .rev-user:hover:after {
+    width: 0;
+    transition:all 250ms ease;
+  }
+}
 .rev-user-icon {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	margin: 0 0 20px;
-	position: relative;
-	padding-left: calc(var(--user-icon-size) + 10px);
-	min-height: var(--user-icon-size);
+  margin: 0px 0 10px;
+  position: relative;
+  padding-left: calc(var(--user-icon-size) + 10px);
+  min-height: calc(var(--user-icon-size) + 32px);
 }
 
 .rev-user-icon > span.user-image {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: calc(50% - (var(--user-icon-size) / 2));
 	width: var(--user-icon-size);
 	height: var(--user-icon-size);
 	display: inline-flex;
@@ -130,15 +141,65 @@
 	font-family: var(--user-name-font-family);
 	font-size: var(--user-name-font-size);
 	line-height: 1.2em;
+/*
 	display: block;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	max-width: calc(100% - 95px);
+*/
   font-weight: var(--user-name-font-weight);
   padding-top: 2px;
 }
+
+.rev-user-icon .user-name i{
+  background: darkgreen;
+  border-radius: 50%;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  left: 3px;
+  top: 2px;
+}
+.rev-user-icon .user-name i:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.rev-user-icon .user-name i:after {
+  content: "Verfied User";
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  overflow: hidden;
+  font-size: 10px;
+  background: #fff;
+  height: 0;
+  width: 0;
+  padding: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 2px;
+  opacity:0;
+  transition:opacity 250ms 500ms ease, height 0s 500ms linear, width 0s 500ms linear, padding 0s 500ms linear;
+}
+
+.rev-user-icon .user-name i:hover:after {
+  height: 22px;
+  width: 75px;
+  padding: 2px 7px;
+  opacity:1;
+  transition:opacity 250ms ease;
+}
+
 
 .rev-user-icon > time {
 	font-family: var(--user-date-font-family);
@@ -149,44 +210,13 @@
 }
 
 .rev-rate {
-	position: absolute;
-	top: calc(var(--box-padding));
-	right: 15px;
-  letter-spacing: -3px;
-}
-
-.rev-verified-user .rev-rate:before {
-  content: "Verified User";
-  position: absolute;
-  top: 100%;
-  font-size: 10px;
   line-height: 1em;
-  font-weight: 600;
-  letter-spacing: 2px;
-  left: 23px;
-  z-index: 2;
-}
-
-.rev-verified-user .rev-rate:after {
-	content: "✔";
-  font-size: 11px;
-  position: absolute;
-  color: #fff;
-  z-index: 1;
-  top: 100%;
-  left: 2px;
-  background: darkgreen;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
 }
 
 .rev-rate i {
 	color: var(--star-color-off);
 	-webkit-text-stroke: 1px var(--star-color-outline);
+  margin-right: -3px;
 }
 
 .star-1 i:nth-child(1),
@@ -229,6 +259,7 @@
 
 .rev-rate i:before {
 	content: "★";
+	content: "★";
 	font-style: normal;
 	font-size: 22px;
 	color: inherit;
@@ -240,20 +271,25 @@
 	font-weight: var(--rev-topic-font-weight);
 	letter-spacing: var(--rev-topic-letter-spacing);
 	color: var(--rev-topic-color);
-	/*margin: 0 0 10px calc(var(--user-icon-size) + 10px);*/
 	margin: 0;
 	display: block;
-	display: -webkit-box;
+	/*
+  display: -webkit-box;
 	-webkit-line-clamp: var(--rev-topic-clip-lines);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
+  */
 	line-height: 1.3em;
+}
+.rev-topic:first-letter {
+  text-transform: capitalize;
 }
 .rev-qa-scroll {
 	overflow: auto;
-	height: var(--qa-height);
+	max-height: var(--qa-height);
   padding-right: 5px;
 	scrollbar-width: thin;
+  margin: 5px 0;
 }
 .rev-qa-scroll::-webkit-scrollbar {
 	width: 0.2em;
@@ -270,7 +306,7 @@
 	font-size: var(--q-font-size);
 	font-weight: var(--q-font-weight);
 	line-height: 1.2em;
-	margin: 20px 0 5px;
+	margin: 10px 0 5px;
 }
 .rev-a {
 	font-family: var(--a-font-family);
@@ -285,4 +321,20 @@
 	overflow: hidden;
 	height: calc(1.2em * var(--a-clip-lines));
 	*/
+}
+
+@media(max-width:599px){
+  .wp-g2-rev-front {
+    flex-flow:column;
+  }
+  .wp-g2-rev-front > div{
+    width:100%;
+    max-width: 400px;
+    margin:0 auto;
+  }
+  .wp-g2-rev-front > div:nth-child(2):nth-last-child(1) .rev-qa-scroll,
+  .wp-g2-rev-front > div:nth-child(2):nth-last-child(2) .rev-qa-scroll,
+  .wp-g2-rev-front > div:nth-child(3):nth-last-child(1) .rev-qa-scroll  {
+    max-height: inherit;
+  }
 }
