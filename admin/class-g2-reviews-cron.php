@@ -68,9 +68,9 @@ class G2_Reviews_Cron
 	{
 
 		// Run Function to fect data into G2 API
-		$init_response = $this->fetch_product_reviews();
+		/*$init_response = $this->fetch_product_reviews();
 		return;
-		/*
+			
 		print '<script>alert(1);</script>';
 		print '<pre>';
 		print_r($init_response);
@@ -120,7 +120,7 @@ class G2_Reviews_Cron
 				$review_entry = []; //define an empty array for review entry
 				$review_user = []; //define an empty array for review user
 				$review_address = []; //define an empty array for review address
-
+				
 
 				if (isset($review->attributes)) { //check if review attributes are set
 					/*if (!isset($review->attributes->star_rating) || $review->attributes->star_rating < 4) {

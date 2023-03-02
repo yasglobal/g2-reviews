@@ -31,7 +31,9 @@ class G2_Reviews_Widget extends WP_Widget
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		$fileCall = 'widget';
+		 $output = '';
 		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+		echo $output;
 		echo $args['after_widget'];
 	}
 
