@@ -16,7 +16,12 @@ function g2_review_shortcode($atts)
 
 	$output = '';
 	$fileCall = 'shortcode';
-	include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+	delete_option( 'g2_reviews_message' );
+	if(get_option( 'g2_reviews_settings' )){
+		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+	}else if(is_user_logged_in() ){
+		$output = 'Please fill G2 API  <a href="/wp-admin/admin.php?page=g2-reviews-settings" title="G2 API Setting">here</a>. ';
+	}
 
 	return $output;
 }

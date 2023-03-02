@@ -54,6 +54,7 @@ class G2_Reviews_Cron
 			$response = [];
 			//set message in option when api not fetch the data;
 			update_option( 'g2_reviews_message', '<div class="g2-message error"><strong>Error :</strong> Invalid Credentials</div>' );
+			delete_option( 'g2_reviews_settings' );
 		} else {
 			$response = json_decode($response);
 			//set message in option when api successfully fetch the data;
@@ -84,7 +85,6 @@ class G2_Reviews_Cron
 
 		// Decode the JSON string into a PHP object or array
 		$init_response = json_decode($json_string);
-		print '<script>alert(32);</script>';
 
 		/*if (isset($init_response, $init_response->links, $init_response->links->last)) {
 		  $last_page_response = fetch_product_reviews($init_response->links->last);
@@ -110,12 +110,6 @@ class G2_Reviews_Cron
 		if (!empty($product_reviews)) {
 			$table_row == false; // set $table_row variable to false
 			foreach ($product_reviews as $review) {
-
-				print '<pre>';
-				echo 'start-asdwqe111';
-				print_r($review->attributes);
-				echo 'end-asdwqe111';
-				print '</pre>';
 
 				$review_entry = []; //define an empty array for review entry
 				$review_user = []; //define an empty array for review user

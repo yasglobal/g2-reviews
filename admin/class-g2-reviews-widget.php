@@ -32,7 +32,11 @@ class G2_Reviews_Widget extends WP_Widget
 		}
 		$fileCall = 'widget';
 		 $output = '';
+		 if(get_option( 'g2_reviews_settings' )){
 		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+		}else if(is_user_logged_in() ){
+			$output = 'Please fill G2 API  <a href="/wp-admin/admin.php?page=g2-reviews-settings" title="G2 API Setting">here</a>.';
+		}
 		echo $output;
 		echo $args['after_widget'];
 	}

@@ -51,7 +51,6 @@ class G2_Reviews_Settings {
             // Check when event is not schedule or Event Interval is updated so scheduled event
             if(!$old_interval || $old_interval != $g2_cron){
                 wp_clear_scheduled_hook( 'g2_reviews_cron' );
-				do_action( 'g2_reviews_cron' );
                 wp_schedule_event( time(), $g2_cron, 'g2_reviews_cron' );
                 
             }    
@@ -115,12 +114,6 @@ class G2_Reviews_Settings {
 			
 			<h2><strong>
 			<?php
-			
-			$next_scheduled = wp_next_scheduled('g2_reviews_cron');
-             echo 'Scheduled = '.date('Y-m-d H:i:s', $next_scheduled).'<br>';
-			print 'Current = '.date('Y-m-d H:i:s').'<br>';
-			//print G2_REVIEWS_MESSAGE.'<br>';
-			//G2_REVIEWS_MESSAGE = '';
 			esc_html_e( 'G2 Reviews Settings', 'g2-reviews' );
 			?></strong>
 			
