@@ -202,13 +202,15 @@ div[class*="widget"] .rev-user {
 }
 
 .rev-user-icon .user-name i:hover::after {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 22px;
 	width: 75px;
 	padding: 2px 7px;
 	opacity: 1;
 	transition: opacity 250ms ease;
 }
-
 
 .rev-user-icon > time {
 	font-family: var(--user-date-font-family);
