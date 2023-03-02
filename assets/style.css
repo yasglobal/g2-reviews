@@ -45,7 +45,7 @@
 	--rev-topic-font-family: inherit;
 	--rev-topic-font-size: 16px;
 	--rev-topic-font-weight: 600;
-	--rev-topic-letter-spacing: 1px;
+	--rev-topic-letter-spacing: 0;
 	--rev-topic-color: #246f9e;
 	--rev-topic-clip-lines: 2;
 
@@ -85,7 +85,7 @@
 		 );
 	border: var(--box-border);
 	border-radius: var(--box-radius);
-	padding: var(--box-padding) calc(var(--box-padding) * 2);
+	padding: var(--box-padding) calc(var(--box-padding) * 1);
 	box-shadow: var(--box-shadow);
 	background: var(--box-background);
 	position: relative;
@@ -106,7 +106,7 @@
 .rev-user-icon > span.user-image {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: calc(50% - (var(--user-icon-size) / 2));
 	width: var(--user-icon-size);
 	height: var(--user-icon-size);
 	display: inline-flex;
@@ -170,6 +170,7 @@
 .rev-verified-user .rev-rate:after {
 	content: "✔";
   font-size: 11px;
+  text-indent: -2px;
   position: absolute;
   color: #fff;
   z-index: 1;
@@ -241,13 +242,13 @@
 	letter-spacing: var(--rev-topic-letter-spacing);
 	color: var(--rev-topic-color);
 	/*margin: 0 0 10px calc(var(--user-icon-size) + 10px);*/
-	margin: 0;
+	margin: 0 0 5px;
 	display: block;
 	display: -webkit-box;
 	-webkit-line-clamp: var(--rev-topic-clip-lines);
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	line-height: 1.3em;
+	line-height: 1.1em;
 }
 .rev-qa-scroll {
 	overflow: auto;
@@ -295,5 +296,9 @@
     width:100%;
     max-width: 400px;
     margin:0 auto;
+  }
+  .wp-g2-rev-front > div:nth-child(2):nth-last-child(2) .rev-qa-scroll,
+  .wp-g2-rev-front > div:nth-child(3):nth-last-child(1) .rev-qa-scroll  {
+    height: inherit;
   }
 }
