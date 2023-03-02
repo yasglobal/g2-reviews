@@ -192,6 +192,9 @@ div[class*="widget"] .rev-user {
 	overflow: hidden;
 	font-size: 10px;
 	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 0;
 	width: 0;
 	padding: 0;
@@ -202,9 +205,6 @@ div[class*="widget"] .rev-user {
 }
 
 .rev-user-icon .user-name i:hover::after {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 22px;
 	width: 75px;
 	padding: 2px 7px;
