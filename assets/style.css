@@ -88,7 +88,7 @@
 	min-width: 280px;
 }
 
-div[class*=widget] .rev-user {
+div[class*="widget"] .rev-user {
 	width: 100%;
 }
 
@@ -161,7 +161,7 @@ div[class*=widget] .rev-user {
 }
 
 .rev-user-icon .user-name i {
-	background: darkgreen;
+	background: #006400;
 	border-radius: 50%;
 	display: inline-block;
 	width: 13px;
@@ -222,7 +222,7 @@ div[class*=widget] .rev-user {
 	line-height: 1;
 }
 
-.rev-rate i {
+.rev-rate[class*="star"] i {
 	color: var(--star-color-off);
 	-webkit-text-stroke: 1px var(--star-color-outline);
 	margin-right: -3px;
@@ -266,7 +266,7 @@ div[class*=widget] .rev-user {
 	-webkit-text-fill-color: transparent;
 }
 
-.rev-rate i::before {
+.rev-rate[class*="star"] i::before {
 	content: "★";
 	content: "★";
 	font-style: normal;
@@ -289,7 +289,7 @@ div[class*=widget] .rev-user {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
   */
-	line-height: 1.3em;
+	line-height: 1.3;
 }
 
 .rev-topic::first-letter {
@@ -304,7 +304,7 @@ div[class*=widget] .rev-user {
 	margin: 5px 0;
 }
 
-div[class*=widget] .rev-qa-scroll {
+div[class*="widget"] .rev-qa-scroll {
 	max-height: 120px;
 }
 
@@ -317,8 +317,8 @@ div[class*=widget] .rev-qa-scroll {
 }
 
 .rev-qa-scroll::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	outline: 1px solid darkgrey;
+	background-color: #a9a9a9;
+	outline: 1px solid #a9a9a9;
 }
 
 .rev-q {
