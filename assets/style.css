@@ -87,6 +87,10 @@
 	overflow: hidden;
 	min-width: 280px;
 }
+.widget_g2_reviews .rev-user {
+    width: 100% ;
+}
+
 @media(min-width:992px){
   .rev-user:after {
     content: "";
@@ -290,6 +294,9 @@
   padding-right: 5px;
 	scrollbar-width: thin;
   margin: 5px 0;
+}
+.widget_g2_reviews .rev-qa-scroll {
+  max-height: 120px;
 }
 .rev-qa-scroll::-webkit-scrollbar {
 	width: 0.2em;
