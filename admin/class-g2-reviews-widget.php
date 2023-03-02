@@ -14,8 +14,8 @@ class G2_Reviews_Widget extends WP_Widget
 	function __construct()
 	{
 		parent::__construct(
-			'my_reviews',
-			__('My Reviews', 'text_domain'),
+			'g2_reviews',
+			__('G2 Reviews', 'text_domain'),
 			array('description' => __('Your plugin widget description.', 'text_domain'),)
 		);
 	}
@@ -31,7 +31,9 @@ class G2_Reviews_Widget extends WP_Widget
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		$fileCall = 'widget';
-		include_once G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+		 $output = '';
+		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+		echo $output;
 		echo $args['after_widget'];
 	}
 
@@ -84,7 +86,7 @@ function wpb_load_widget()
 {
 	register_widget('G2_Reviews_Widget');
 	wp_enqueue_style('G2-style', '/wp-content/plugins/g2-reviews/assets/style.css', array(), '20190328');
-	wp_enqueue_script('G2-script', '/wp-content/plugins/g2-reviews/assets/script.js', array(), '20161114', true);
+	//wp_enqueue_script('G2-script', '/wp-content/plugins/g2-reviews/assets/script.js', array(), '20161114', true);
 }
 
 add_action('widgets_init', 'wpb_load_widget');
