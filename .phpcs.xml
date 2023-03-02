@@ -24,6 +24,10 @@
     <!-- Run against the PHPCompatibilityWP ruleset. -->
     <rule ref="PHPCompatibilityWP"/>
 
+		<!-- Run against the WordPress ruleset. -->
+    <rule ref="WordPress">
+		</rule>
+
 		<!-- Check for cross-version support for PHP 5.4 and higher. -->
     <config name="testVersion" value="5.6-"/>
 
