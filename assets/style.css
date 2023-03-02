@@ -362,13 +362,13 @@ div[class*="widget"] .rev-qa-scroll {
 	.wp-g2-rev-front > div:nth-child(3):nth-last-child(1) .rev-qa-scroll {
 		max-height: inherit;
 	}
-  
+
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(2):nth-last-child(1) .rev-qa-scroll,
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(2):nth-last-child(2) .rev-qa-scroll,
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(3):nth-last-child(1) .rev-qa-scroll {
 		max-height: 120px;
 	}
-  
+
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(1):nth-last-child(1) .rev-qa-scroll,
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(1):nth-last-child(2) .rev-qa-scroll,
 	div[class*="widget"] .wp-g2-rev-front > div:nth-child(2):nth-last-child(1) .rev-qa-scroll {
