@@ -31,7 +31,7 @@ class G2_Reviews_Widget extends WP_Widget
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		$fileCall = 'widget';
-		include_once G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
+		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
 		echo $args['after_widget'];
 	}
 
@@ -41,7 +41,18 @@ class G2_Reviews_Widget extends WP_Widget
 		// Output the widget settings form
 		$title = isset($instance['title']) ? $instance['title'] : '';
 		$review_limit = isset($instance['review_limit']) ? $instance['review_limit'] : '';
-		$options = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10',);
+		$options = array(
+			'1',
+			'2',
+			'3',
+			'4',
+			'5',
+			'6',
+			'7',
+			'8',
+			'9',
+			'10',
+		);
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
@@ -73,7 +84,7 @@ function wpb_load_widget()
 {
 	register_widget('G2_Reviews_Widget');
 	wp_enqueue_style('G2-style', '/wp-content/plugins/g2-reviews/assets/style.css', array(), '20190328');
-	wp_enqueue_script('G2-script', '/wp-content/plugins/g2-reviews/assets/script.js', array(), '20161114', true);
+	//wp_enqueue_script('G2-script', '/wp-content/plugins/g2-reviews/assets/script.js', array(), '20161114', true);
 }
 
 add_action('widgets_init', 'wpb_load_widget');

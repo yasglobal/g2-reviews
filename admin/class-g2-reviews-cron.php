@@ -52,8 +52,12 @@ class G2_Reviews_Cron
 		curl_close($curl);
 		if ($err || $status_code !== 200) {
 			$response = [];
+			//set message in option when api not fetch the data;
+			update_option( 'g2_reviews_message', '<div class="g2-message error"><strong>Error :</strong> Invalid Credentials</div>' );
 		} else {
 			$response = json_decode($response);
+			//set message in option when api successfully fetch the data;
+			update_option( 'g2_reviews_message', '<div class="g2-message success"><strong>Success :</strong> We are Successfully fetch data from G2</div>' );
 		}
 
 		return $response;
@@ -64,7 +68,9 @@ class G2_Reviews_Cron
 	{
 
 		// Run Function to fect data into G2 API
-		/*$init_response = $this->fetch_product_reviews();
+		$init_response = $this->fetch_product_reviews();
+		return;
+		/*
 		print '<script>alert(1);</script>';
 		print '<pre>';
 		print_r($init_response);
@@ -98,15 +104,12 @@ class G2_Reviews_Cron
 		}*/
 
 		$product_reviews = $init_response;
-		print '<pre>';
-//          print_r($product_reviews->data);
-		print '</pre>';
 
 		$table_name = G2_REVIEWS_TABLE; // define table name using WP database prefix
 		// check if product reviews are not empty
 		if (!empty($product_reviews)) {
 			$table_row == false; // set $table_row variable to false
-			foreach ($product_reviews->data as $review) {
+			foreach ($product_reviews as $review) {
 
 				print '<pre>';
 				echo 'start-asdwqe111';
@@ -118,10 +121,11 @@ class G2_Reviews_Cron
 				$review_user = []; //define an empty array for review user
 				$review_address = []; //define an empty array for review address
 
+
 				if (isset($review->attributes)) { //check if review attributes are set
-					if (!isset($review->attributes->star_rating) || $review->attributes->star_rating < 4) {
+					/*if (!isset($review->attributes->star_rating) || $review->attributes->star_rating < 4) {
 						continue;
-					}
+					}*/
 					$review_entry['other_attributes'] = serialize($review->attributes);
 //					$review_entry['other_attributes'] = '';
 

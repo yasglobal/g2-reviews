@@ -1,869 +1,823 @@
-{
-  "data": [
-    {
-      "id": "44",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/44"
-      },
-      "attributes": {
-        "default_sort": 0.586358967748216,
-        "product_name": "Sage Intacct",
-        "is_public": false,
-        "slug": "sage-intacct-review-44",
-        "percent_complete": 0.6875,
-        "star_rating": 3.5,
-        "title": " expense management module review only - it is not intuitive, looks old and not easy to use",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "It got the job done but didn't help the sales user."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "The expense management module looks clunky and isn't easy to navigate. Doesn't provide many tools for the sales user compared to Expensify for instance."
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "Would suggest using Expensify or another system and integrating to Intacct for expense management purposes."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 4.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 2.0
-          },
-          "ease_of_setup": {
-            "text": "Ease of Setup",
-            "value": 2.0
-          }
-        },
-        "verified_current_user": true,
-        "is_business_partner": true,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 0,
-        "votes_down": 0,
-        "votes_total": 0,
-        "user_id": null,
-        "user_name": "Verified User in Computer Software",
-        "user_image_url": "icons/anonymous-avatar-teal.svg",
-        "country_name": null,
-        "regions": null,
-        "submitted_at": "2012-08-22T19:52:25.760-05:00",
-        "updated_at": "2013-05-02T11:34:43.208-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/44/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/44/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/44/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/44/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/44/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/44/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "82",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/82"
-      },
-      "attributes": {
-        "default_sort": 1.6481051401922469,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-82",
-        "percent_complete": 1.0,
-        "star_rating": 4.0,
-        "title": "Intacct for Accounting",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Ease of implementation.  Flexible reporting capabilities that could meet the bulk of standard financial reporting needs.  Extensive capabilities out of the box."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Creating unique reports was not intuitive.  At times it seemed to take too many clicks to accomplish a task."
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "The product should meet the bulk of your needs from an accounting standpoint and is flexible and for the most part intuitive.  When implementing the product be sure to think through the implications of how  you implement the product on your own and do not rely on Intacct to necessarily guide you down the most effective implementation path."
-          },
-          "benefits": {
-            "text": "What problems is the product solving and how is that benefiting you?",
-            "value": "A cloud based accounting software that had more functionality than Quickbooks."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 6.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 6.0
-          },
-          "quality_of_support": {
-            "text": "Quality of Support",
-            "value": 4.0
-          },
-          "ease_of_setup": {
-            "text": "Ease of Setup",
-            "value": 6.0
-          },
-          "ease_of_admin": {
-            "text": "Ease of Admin",
-            "value": 7.0
-          },
-          "ease_of_doing_business_with": {
-            "text": "Has the product been a good partner in doing business?",
-            "value": 6.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": true,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 2,
-        "votes_down": 0,
-        "votes_total": 2,
-        "user_id": "fd77075a-87b5-4f31-a94c-91de51a38b8a",
-        "user_name": "Brian Murnane",
-        "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/84771/thumb_square_1554151945.jpeg",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2012-08-29T13:11:34.265-05:00",
-        "updated_at": "2014-06-24T12:44:03.506-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/82/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/82/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/82/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/82/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/82/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/82/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "288",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/288"
-      },
-      "attributes": {
-        "default_sort": 0.45044617236797774,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-288",
-        "percent_complete": 0.6875,
-        "star_rating": 3.0,
-        "title": "P&L owner for tracking and forcasting",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "The dashboards give you good information in one view.  Which make it easy to track budget vs. actual on a rolling monthly basis.  The dashboards can also provide one place to get 80% of your data."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "drilling down into the details can be difficult and not easy to follow.  Reports are difficult to set up and put on dashboards.  "
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "Plan properly and have your requirement clearly defined before implementing this software.  "
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 6.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 4.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 2,
-        "votes_down": 0,
-        "votes_total": 2,
-        "user_id": "edf12502-d7bb-4f39-abf7-ffc51c6051f1",
-        "user_name": "Mike Stanczak",
-        "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/138626/thumb_square_0ff64a6bdbfc1f9651597f288ab36f99.jpeg",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2012-09-12T14:33:25.545-05:00",
-        "updated_at": "2012-09-12T14:33:25.545-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/288/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/288/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/288/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/288/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/288/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/288/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "654",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/654"
-      },
-      "attributes": {
-        "default_sort": 0.42879305453834704,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-654",
-        "percent_complete": 1.0,
-        "star_rating": 3.0,
-        "title": "The basics done basically",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Ok to use, nice dashboard, new menu structures are good with fast links at the bottom"
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Complexity around entities, line item data entry can be messy with single lines doubling up, approving purchase orders is hard because the amount isn't on the main approval view and you have to click all the way through to the line items to get the PO value."
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "It's an accounting system. Nothing more. Nothing less."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 4.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 3.0
-          },
-          "quality_of_support": {
-            "text": "Quality of Support",
-            "value": 5.0
-          },
-          "ease_of_setup": {
-            "text": "Ease of Setup",
-            "value": 2.0
-          },
-          "ease_of_admin": {
-            "text": "Ease of Admin",
-            "value": 2.0
-          },
-          "ease_of_doing_business_with": {
-            "text": "Has the product been a good partner in doing business?",
-            "value": 5.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 1,
-        "votes_down": 0,
-        "votes_total": 1,
-        "user_id": "e6bc9153-bfc0-493d-ba63-efc666a1b4d2",
-        "user_name": "Shane Anastasi",
-        "user_image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQFT2easp-_LYg/profile-displayphoto-shrink_100_100/0/1585773436218?e=1666224000&v=beta&t=FiL_HLaIg_H9PL6_i-iVAyguOaIWelezdo7C1OZ_yPo",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2012-09-14T15:27:14.603-05:00",
-        "updated_at": "2012-09-14T15:27:14.603-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/654/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/654/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/654/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/654/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/654/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/654/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "967",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/967"
-      },
-      "attributes": {
-        "default_sort": 0.335873806823929,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-967",
-        "percent_complete": 0.6875,
-        "star_rating": 4.0,
-        "title": "Cloud Accounting Application",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Online accounting package, can access from anywhere. For an accounting package, easy to navigate, view reports and perform approvals as needed."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Creating reports isn't the easiest, though could be company setup."
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "It has been a great financial application for our organization and integrates well with our other frequently used applications."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 6.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 5.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 0,
-        "votes_down": 0,
-        "votes_total": 0,
-        "user_id": "49ab9efd-e20d-46a8-91e4-e5450a7bd3a8",
-        "user_name": "Arthur Carlucci",
-        "user_image_url": "https://media.licdn.com/mpr/mprx/0_IP83M2FYl8foy9S_W-6OM7n016MdKvS_WANYM7ka2iSJ7AsibvKDcfrhjeJ91tu7oKC0nHsdhkII",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2012-09-15T21:51:11.879-05:00",
-        "updated_at": "2012-09-15T21:51:11.879-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/967/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/967/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/967/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/967/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/967/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/967/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "8082",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/8082"
-      },
-      "attributes": {
-        "default_sort": 0.4443354719429177,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-8082",
-        "percent_complete": 0.6129032258064516,
-        "star_rating": 4.0,
-        "title": "Perfect for the Small to Medium Size Business",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Integration to Salesforce fairly straight forward.  The basics to GL/AP/AR are fairly easy to use."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Not much .. system performance could be a little quicker.  Reporting could be easier, but not bad."
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "Great tool that won't break the bank."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 6.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 6.0
-          },
-          "quality_of_support": {
-            "text": "Quality of Support",
-            "value": 6.0
-          },
-          "ease_of_admin": {
-            "text": "Ease of Admin",
-            "value": 6.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 2,
-        "votes_down": 0,
-        "votes_total": 2,
-        "user_id": "1391b3e3-8cc6-47b6-9f7c-a3d9d51c053b",
-        "user_name": "Peter Barbatsuly",
-        "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/113259/thumb_square_f037b90805d700bcd9389d10de620136.jpeg",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2012-11-12T18:38:58.718-06:00",
-        "updated_at": "2012-11-12T18:38:58.718-06:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/8082/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/8082/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/8082/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "10353",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/10353"
-      },
-      "attributes": {
-        "default_sort": 0.8026768250621923,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-10353",
-        "percent_complete": 1.0,
-        "star_rating": 4.0,
-        "title": "Implemented it and used it for high growth tech start-up-good stepup from Quickbooks",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Dashboards and configurability - dimensions are great to expand reporting capabilities.  I liked the controls and close functionality.   Upgrades were as easy as can be - \r\nWe integrated with our operating system which went relatively easy compared to other systems I have implemented."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Audit trail was still manual - you had to get Intacct to provide upon request.  "
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "Ensure you get training on the system so that you can create and drive reports on your own.  The Intacct Conference was terrific for connecting to other users, learning new reporting techniques and getting  connected to other platforms such as Avalara sales tax."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 6.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 5.0
-          },
-          "quality_of_support": {
-            "text": "Quality of Support",
-            "value": 6.0
-          },
-          "ease_of_setup": {
-            "text": "Ease of Setup",
-            "value": 5.0
-          },
-          "ease_of_admin": {
-            "text": "Ease of Admin",
-            "value": 6.0
-          },
-          "ease_of_doing_business_with": {
-            "text": "Has the product been a good partner in doing business?",
-            "value": 7.0
-          }
-        },
-        "verified_current_user": true,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 3,
-        "votes_down": 0,
-        "votes_total": 3,
-        "user_id": "beb14ca3-724e-41a5-83dc-06254ea4369b",
-        "user_name": "Amy Cooper",
-        "user_image_url": "https://media.licdn.com/mpr/mprx/0_W1fpiDNlJgRIg6vqdN7ii76PMpyIl5vqI-R_imF2QseRm3CNLz0rSaPGBApq-CN4erDG2dM-l7m2",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2013-01-28T21:19:43.923-06:00",
-        "updated_at": "2013-01-28T21:19:43.923-06:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/10353/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/10353/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/10353/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "18051",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/18051"
-      },
-      "attributes": {
-        "default_sort": 0.8651576159826843,
-        "product_name": "Sage Intacct",
-        "is_public": false,
-        "slug": "sage-intacct-review-18051",
-        "percent_complete": 0.4375,
-        "star_rating": 2.5,
-        "title": "Intacct",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "User Friendly. It is easy to figure out where you need to go to get what you need. "
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "Functionality not the best. The information that is pulled isn't always the exact data required."
-          },
-          "benefits": {
-            "text": "What problems is the product solving and how is that benefiting you?",
-            "value": "NA"
-          }
-        },
-        "secondary_answers": {},
-        "verified_current_user": false,
-        "is_business_partner": false,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 0,
-        "votes_down": 0,
-        "votes_total": 0,
-        "user_id": null,
-        "user_name": "Verified User in Telecommunications",
-        "user_image_url": "icons/anonymous-avatar-purple.svg",
-        "country_name": null,
-        "regions": null,
-        "submitted_at": "2013-11-20T14:55:38.379-06:00",
-        "updated_at": "2013-11-20T14:55:38.379-06:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/18051/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/18051/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/18051/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "23846",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/23846"
-      },
-      "attributes": {
-        "default_sort": 5.28746075096226,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-23846",
-        "percent_complete": 0.04790419161676647,
-        "star_rating": 4.5,
-        "title": "Intacct for Efficiency",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "Intaccts integration with our outside web based programs is seamless. The ability to condense our general ledger from over 3,000 accounts to under 200 has been a huge bonus. The comprehensive reporting features have allowed us to analyze our financials in a variety of ways. I am also thrilled with the budgeting tools.    "
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "As a web based product one issue I have found is mouse navigation issues, when I am attempting to click on a feature towards the top of the page and the menus at the top start dropping down. "
-          },
-          "benefits": {
-            "text": "What problems is the product solving and how is that benefiting you?",
-            "value": "With a smaller accounting department, Intacct has allowed us to streamline and automate so many of our day to day tasks. From scheduling budget reports to imported expense transactions, this program has saved us time and money. "
-          }
-        },
-        "secondary_answers": {},
-        "verified_current_user": false,
-        "is_business_partner": true,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 2,
-        "votes_down": 0,
-        "votes_total": 2,
-        "user_id": "885fbd5c-1283-4030-bec3-d75d63d3c44d",
-        "user_name": "Emma Roy",
-        "user_image_url": "https://images.g2crowd.com/uploads/avatar/image/162258/thumb_square_cfdd2862ce5767154bbbf33c6e2044e0.jpeg",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2014-06-09T16:45:11.227-05:00",
-        "updated_at": "2020-06-11T10:02:45.045-05:00",
-        "moderated_at": "2020-06-11T11:16:24.707-05:00",
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/23846/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/23846/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/23846/answers"
-          }
-        }
-      }
-    },
-    {
-      "id": "23875",
-      "type": "survey_responses",
-      "links": {
-        "self": "https://data.g2.com/api/v1/survey-responses/23875"
-      },
-      "attributes": {
-        "default_sort": 1.733525253009226,
-        "product_name": "Sage Intacct",
-        "is_public": true,
-        "slug": "sage-intacct-review-23875",
-        "percent_complete": 0.4262295081967213,
-        "star_rating": 3.5,
-        "title": "Intacct - Great for Recognizing Deferred Revenue",
-        "comment_answers": {
-          "love": {
-            "text": "What do you like best about the product?",
-            "value": "I like the rev rec schedules the best.  A significant portion of our revenue is from annual support payments that we recognized over the time period of the annual support.  The Revenue/Accounts Receivable Module makes it easy to record and recognize this revenue automatically rather than having to track it on a spreadsheet and figure out what needs to be recorded monthly.  This is a strong attribute of the software.  Secondarily, being a cloud based solutions has been very helpful when not in the office."
-          },
-          "hate": {
-            "text": "What do you dislike about the product?",
-            "value": "The inability to change certain entries has caused a lot of wasted time trying to figure out \"work arounds\".  For example, once a cash payment has been received, the entry that recorded the invoice cannot be changed.  If you want/need to add a location or department, it can't be done.  Also, the inability to merge accounts and departments to make a more streamlined chart of accounts (especially when you inherited a mess) is frustrating.  There should be more flexibility to make changes.  I know other systems have this flexibility. "
-          },
-          "recommendations": {
-            "text": "Recommendations to others considering the product:",
-            "value": "Make sure you set things up correct, i.e. chart of accounts.  The inflexibility to change this has been frustrating.  "
-          },
-          "benefits": {
-            "text": "What problems is the product solving and how is that benefiting you?",
-            "value": "We have solved the issue of tracking deferred revenue manually.  We have definitely realized time savings by having this system."
-          }
-        },
-        "secondary_answers": {
-          "meets_requirements": {
-            "text": "Meets Requirements",
-            "value": 5.0
-          },
-          "ease_of_use": {
-            "text": "Ease of Use",
-            "value": 5.0
-          },
-          "quality_of_support": {
-            "text": "Quality of Support",
-            "value": 5.0
-          },
-          "ease_of_admin": {
-            "text": "Ease of Admin",
-            "value": 6.0
-          },
-          "ease_of_doing_business_with": {
-            "text": "Has the product been a good partner in doing business?",
-            "value": 5.0
-          }
-        },
-        "verified_current_user": false,
-        "is_business_partner": true,
-        "review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
-        "votes_up": 1,
-        "votes_down": 0,
-        "votes_total": 1,
-        "user_id": "e15354fd-2560-4e8c-9ec9-6df85998cf15",
-        "user_name": "Jennifer Oehlerts",
-        "user_image_url": "https://media.licdn.com/mpr/mprx/0_sNXFMQq3GTx8Y4S7q-NZMXv286WTOUS749rZMLqyxigK30sf9tqIc58tmedxgyu_UB6JnCQLzfWr",
-        "country_name": "United States",
-        "regions": [
-          "Americas",
-          "North America"
-        ],
-        "submitted_at": "2014-06-10T13:57:29.694-05:00",
-        "updated_at": "2014-06-10T13:58:44.974-05:00",
-        "moderated_at": null,
-        "product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
-        "reference_user_consent": "unanswered",
-        "status": "approved"
-      },
-      "relationships": {
-        "product": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/product",
-            "related": "https://data.g2.com/api/v1/survey-responses/23875/product"
-          }
-        },
-        "questions": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/questions",
-            "related": "https://data.g2.com/api/v1/survey-responses/23875/questions"
-          }
-        },
-        "answers": {
-          "links": {
-            "self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/answers",
-            "related": "https://data.g2.com/api/v1/survey-responses/23875/answers"
-          }
-        }
-      }
-    }
-  ],
-  "meta": {
-    "record_count": 1721,
-    "page_count": 173
-  },
-  "links": {
-    "first": "https://data.g2.com/api/v1/products/e83d22a2-8330-4ba0-8262-2fcfb76382ab/survey-responses?page%5Bnumber%5D=1&page%5Bsize%5D=10",
-    "next": "https://data.g2.com/api/v1/products/e83d22a2-8330-4ba0-8262-2fcfb76382ab/survey-responses?page%5Bnumber%5D=2&page%5Bsize%5D=10",
-    "last": "https://data.g2.com/api/v1/products/e83d22a2-8330-4ba0-8262-2fcfb76382ab/survey-responses?page%5Bnumber%5D=173&page%5Bsize%5D=10"
-  }
-}
+[{
+	"id": "44",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/44"
+	},
+	"attributes": {
+		"default_sort": 0.586358967748216,
+		"product_name": "Sage Intacct",
+		"is_public": false,
+		"slug": "sage-intacct-review-44",
+		"percent_complete": 0.6875,
+		"star_rating": 3.5,
+		"title": " expense management module review only - it is not intuitive, looks old and not easy to use",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "It got the job done but didn't help the sales user."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "The expense management module looks clunky and isn't easy to navigate. Doesn't provide many tools for the sales user compared to Expensify for instance."
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "Would suggest using Expensify or another system and integrating to Intacct for expense management purposes."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 4.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 2.0
+			},
+			"ease_of_setup": {
+				"text": "Ease of Setup",
+				"value": 2.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": true,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 0,
+		"votes_down": 0,
+		"votes_total": 0,
+		"user_id": null,
+		"user_name": "Verified User in Computer Software",
+		"user_image_url": "icons/anonymous-avatar-teal.svg",
+		"country_name": null,
+		"regions": null,
+		"submitted_at": "2012-08-22T19:52:25.760-05:00",
+		"updated_at": "2013-05-02T11:34:43.208-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/44/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/44/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/44/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/44/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/44/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/44/answers"
+			}
+		}
+	}
+}, {
+	"id": "82",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/82"
+	},
+	"attributes": {
+		"default_sort": 1.6481051401922469,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-82",
+		"percent_complete": 1.0,
+		"star_rating": 4.0,
+		"title": "Intacct for Accounting v5",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Ease of implementation.  Flexible reporting capabilities that could meet the bulk of standard financial reporting needs.  Extensive capabilities out of the box."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Creating unique reports was not intuitive.  At times it seemed to take too many clicks to accomplish a task."
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "The product should meet the bulk of your needs from an accounting standpoint and is flexible and for the most part intuitive.  When implementing the product be sure to think through the implications of how  you implement the product on your own and do not rely on Intacct to necessarily guide you down the most effective implementation path."
+			},
+			"benefits": {
+				"text": "What problems is the product solving and how is that benefiting you?",
+				"value": "A cloud based accounting software that had more functionality than Quickbooks."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 6.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 6.0
+			},
+			"quality_of_support": {
+				"text": "Quality of Support",
+				"value": 4.0
+			},
+			"ease_of_setup": {
+				"text": "Ease of Setup",
+				"value": 6.0
+			},
+			"ease_of_admin": {
+				"text": "Ease of Admin",
+				"value": 7.0
+			},
+			"ease_of_doing_business_with": {
+				"text": "Has the product been a good partner in doing business?",
+				"value": 6.0
+			}
+		},
+		"verified_current_user": true,
+		"is_business_partner": true,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 2,
+		"votes_down": 0,
+		"votes_total": 2,
+		"user_id": "fd77075a-87b5-4f31-a94c-91de51a38b8a",
+		"user_name": "Brian Murnane",
+		"user_image_url": "https://images.g2crowd.com/uploads/avatar/image/84771/thumb_square_1554151945.jpeg",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2012-08-29T13:11:34.265-05:00",
+		"updated_at": "2014-06-24T12:44:03.506-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/82/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/82/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/82/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/82/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/82/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/82/answers"
+			}
+		}
+	}
+}, {
+	"id": "288",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/288"
+	},
+	"attributes": {
+		"default_sort": 0.45044617236797774,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-288",
+		"percent_complete": 0.6875,
+		"star_rating": 3.0,
+		"title": "P&L owner for tracking and forcasting",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "The dashboards give you good information in one view.  Which make it easy to track budget vs. actual on a rolling monthly basis.  The dashboards can also provide one place to get 80% of your data."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "drilling down into the details can be difficult and not easy to follow.  Reports are difficult to set up and put on dashboards.  "
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "Plan properly and have your requirement clearly defined before implementing this software.  "
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 6.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 4.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 2,
+		"votes_down": 0,
+		"votes_total": 2,
+		"user_id": "edf12502-d7bb-4f39-abf7-ffc51c6051f1",
+		"user_name": "Mike Stanczak",
+		"user_image_url": "https://images.g2crowd.com/uploads/avatar/image/138626/thumb_square_0ff64a6bdbfc1f9651597f288ab36f99.jpeg",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2012-09-12T14:33:25.545-05:00",
+		"updated_at": "2012-09-12T14:33:25.545-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/288/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/288/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/288/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/288/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/288/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/288/answers"
+			}
+		}
+	}
+}, {
+	"id": "654",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/654"
+	},
+	"attributes": {
+		"default_sort": 0.42879305453834704,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-654",
+		"percent_complete": 1.0,
+		"star_rating": 3.0,
+		"title": "The basics done basically",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Ok to use, nice dashboard, new menu structures are good with fast links at the bottom"
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Complexity around entities, line item data entry can be messy with single lines doubling up, approving purchase orders is hard because the amount isn't on the main approval view and you have to click all the way through to the line items to get the PO value."
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "It's an accounting system. Nothing more. Nothing less."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 4.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 3.0
+			},
+			"quality_of_support": {
+				"text": "Quality of Support",
+				"value": 5.0
+			},
+			"ease_of_setup": {
+				"text": "Ease of Setup",
+				"value": 2.0
+			},
+			"ease_of_admin": {
+				"text": "Ease of Admin",
+				"value": 2.0
+			},
+			"ease_of_doing_business_with": {
+				"text": "Has the product been a good partner in doing business?",
+				"value": 5.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 1,
+		"votes_down": 0,
+		"votes_total": 1,
+		"user_id": "e6bc9153-bfc0-493d-ba63-efc666a1b4d2",
+		"user_name": "Shane Anastasi",
+		"user_image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQFT2easp-_LYg/profile-displayphoto-shrink_100_100/0/1585773436218?e=1666224000&v=beta&t=FiL_HLaIg_H9PL6_i-iVAyguOaIWelezdo7C1OZ_yPo",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2012-09-14T15:27:14.603-05:00",
+		"updated_at": "2012-09-14T15:27:14.603-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/654/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/654/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/654/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/654/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/654/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/654/answers"
+			}
+		}
+	}
+}, {
+	"id": "967",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/967"
+	},
+	"attributes": {
+		"default_sort": 0.335873806823929,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-967",
+		"percent_complete": 0.6875,
+		"star_rating": 4.0,
+		"title": "Cloud Accounting Application",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Online accounting package, can access from anywhere. For an accounting package, easy to navigate, view reports and perform approvals as needed."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Creating reports isn't the easiest, though could be company setup."
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "It has been a great financial application for our organization and integrates well with our other frequently used applications."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 6.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 5.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 0,
+		"votes_down": 0,
+		"votes_total": 0,
+		"user_id": "49ab9efd-e20d-46a8-91e4-e5450a7bd3a8",
+		"user_name": "Arthur Carlucci",
+		"user_image_url": "https://media.licdn.com/mpr/mprx/0_IP83M2FYl8foy9S_W-6OM7n016MdKvS_WANYM7ka2iSJ7AsibvKDcfrhjeJ91tu7oKC0nHsdhkII",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2012-09-15T21:51:11.879-05:00",
+		"updated_at": "2012-09-15T21:51:11.879-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/967/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/967/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/967/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/967/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/967/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/967/answers"
+			}
+		}
+	}
+}, {
+	"id": "8082",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/8082"
+	},
+	"attributes": {
+		"default_sort": 0.4443354719429177,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-8082",
+		"percent_complete": 0.6129032258064516,
+		"star_rating": 4.0,
+		"title": "v5 Perfect for the Small to Medium Size Business",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Integration to Salesforce fairly straight forward.  The basics to GL/AP/AR are fairly easy to use."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Not much .. system performance could be a little quicker.  Reporting could be easier, but not bad."
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "Great tool that won't break the bank."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 6.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 6.0
+			},
+			"quality_of_support": {
+				"text": "Quality of Support",
+				"value": 6.0
+			},
+			"ease_of_admin": {
+				"text": "Ease of Admin",
+				"value": 6.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 2,
+		"votes_down": 0,
+		"votes_total": 2,
+		"user_id": "1391b3e3-8cc6-47b6-9f7c-a3d9d51c053b",
+		"user_name": "Peter Barbatsuly",
+		"user_image_url": "https://images.g2crowd.com/uploads/avatar/image/113259/thumb_square_f037b90805d700bcd9389d10de620136.jpeg",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2012-11-12T18:38:58.718-06:00",
+		"updated_at": "2012-11-12T18:38:58.718-06:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/8082/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/8082/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/8082/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/8082/answers"
+			}
+		}
+	}
+}, {
+	"id": "10353",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/10353"
+	},
+	"attributes": {
+		"default_sort": 0.8026768250621923,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-10353",
+		"percent_complete": 1.0,
+		"star_rating": 4.0,
+		"title": "v5 Implemented it and used it for high growth tech start-up-good stepup from Quickbooks",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Dashboards and configurability - dimensions are great to expand reporting capabilities.  I liked the controls and close functionality.   Upgrades were as easy as can be - \r\nWe integrated with our operating system which went relatively easy compared to other systems I have implemented."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Audit trail was still manual - you had to get Intacct to provide upon request.  "
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "Ensure you get training on the system so that you can create and drive reports on your own.  The Intacct Conference was terrific for connecting to other users, learning new reporting techniques and getting  connected to other platforms such as Avalara sales tax."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 6.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 5.0
+			},
+			"quality_of_support": {
+				"text": "Quality of Support",
+				"value": 6.0
+			},
+			"ease_of_setup": {
+				"text": "Ease of Setup",
+				"value": 5.0
+			},
+			"ease_of_admin": {
+				"text": "Ease of Admin",
+				"value": 6.0
+			},
+			"ease_of_doing_business_with": {
+				"text": "Has the product been a good partner in doing business?",
+				"value": 7.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 3,
+		"votes_down": 0,
+		"votes_total": 3,
+		"user_id": "beb14ca3-724e-41a5-83dc-06254ea4369b",
+		"user_name": "Amy Cooper",
+		"user_image_url": "https://media.licdn.com/mpr/mprx/0_W1fpiDNlJgRIg6vqdN7ii76PMpyIl5vqI-R_imF2QseRm3CNLz0rSaPGBApq-CN4erDG2dM-l7m2",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2013-01-28T21:19:43.923-06:00",
+		"updated_at": "2013-01-28T21:19:43.923-06:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/10353/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/10353/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/10353/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/10353/answers"
+			}
+		}
+	}
+}, {
+	"id": "18051",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/18051"
+	},
+	"attributes": {
+		"default_sort": 0.8651576159826843,
+		"product_name": "Sage Intacct",
+		"is_public": false,
+		"slug": "sage-intacct-review-18051",
+		"percent_complete": 0.4375,
+		"star_rating": 2.5,
+		"title": "Intacct v5",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "User Friendly. It is easy to figure out where you need to go to get what you need. "
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "Functionality not the best. The information that is pulled isn't always the exact data required."
+			},
+			"benefits": {
+				"text": "What problems is the product solving and how is that benefiting you?",
+				"value": "NA"
+			}
+		},
+		"secondary_answers": {},
+		"verified_current_user": false,
+		"is_business_partner": false,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 0,
+		"votes_down": 0,
+		"votes_total": 0,
+		"user_id": null,
+		"user_name": "Verified User in Telecommunications",
+		"user_image_url": "icons/anonymous-avatar-purple.svg",
+		"country_name": null,
+		"regions": null,
+		"submitted_at": "2013-11-20T14:55:38.379-06:00",
+		"updated_at": "2013-11-20T14:55:38.379-06:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/18051/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/18051/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/18051/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/18051/answers"
+			}
+		}
+	}
+}, {
+	"id": "23846",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/23846"
+	},
+	"attributes": {
+		"default_sort": 5.28746075096226,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-23846",
+		"percent_complete": 0.04790419161676647,
+		"star_rating": 4.5,
+		"title": "Intacct for Efficiency",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "Intaccts integration with our outside web based programs is seamless. The ability to condense our general ledger from over 3,000 accounts to under 200 has been a huge bonus. The comprehensive reporting features have allowed us to analyze our financials in a variety of ways. I am also thrilled with the budgeting tools.    "
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "As a web based product one issue I have found is mouse navigation issues, when I am attempting to click on a feature towards the top of the page and the menus at the top start dropping down. "
+			},
+			"benefits": {
+				"text": "What problems is the product solving and how is that benefiting you?",
+				"value": "With a smaller accounting department, Intacct has allowed us to streamline and automate so many of our day to day tasks. From scheduling budget reports to imported expense transactions, this program has saved us time and money. "
+			}
+		},
+		"secondary_answers": {},
+		"verified_current_user": false,
+		"is_business_partner": true,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 2,
+		"votes_down": 0,
+		"votes_total": 2,
+		"user_id": "885fbd5c-1283-4030-bec3-d75d63d3c44d",
+		"user_name": "Emma Roy",
+		"user_image_url": "https://images.g2crowd.com/uploads/avatar/image/162258/thumb_square_cfdd2862ce5767154bbbf33c6e2044e0.jpeg",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2014-06-09T16:45:11.227-05:00",
+		"updated_at": "2020-06-11T10:02:45.045-05:00",
+		"moderated_at": "2020-06-11T11:16:24.707-05:00",
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/23846/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/23846/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23846/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/23846/answers"
+			}
+		}
+	}
+}, {
+	"id": "23875",
+	"type": "survey_responses",
+	"links": {
+		"self": "https://data.g2.com/api/v1/survey-responses/23875"
+	},
+	"attributes": {
+		"default_sort": 1.733525253009226,
+		"product_name": "Sage Intacct",
+		"is_public": true,
+		"slug": "sage-intacct-review-23875",
+		"percent_complete": 0.4262295081967213,
+		"star_rating": 3.5,
+		"title": "Intacct - Great for Recognizing Deferred Revenue",
+		"comment_answers": {
+			"love": {
+				"text": "What do you like best about the product?",
+				"value": "I like the rev rec schedules the best.  A significant portion of our revenue is from annual support payments that we recognized over the time period of the annual support.  The Revenue/Accounts Receivable Module makes it easy to record and recognize this revenue automatically rather than having to track it on a spreadsheet and figure out what needs to be recorded monthly.  This is a strong attribute of the software.  Secondarily, being a cloud based solutions has been very helpful when not in the office."
+			},
+			"hate": {
+				"text": "What do you dislike about the product?",
+				"value": "The inability to change certain entries has caused a lot of wasted time trying to figure out \"work arounds\".  For example, once a cash payment has been received, the entry that recorded the invoice cannot be changed.  If you want/need to add a location or department, it can't be done.  Also, the inability to merge accounts and departments to make a more streamlined chart of accounts (especially when you inherited a mess) is frustrating.  There should be more flexibility to make changes.  I know other systems have this flexibility. "
+			},
+			"recommendations": {
+				"text": "Recommendations to others considering the product:",
+				"value": "Make sure you set things up correct, i.e. chart of accounts.  The inflexibility to change this has been frustrating.  "
+			},
+			"benefits": {
+				"text": "What problems is the product solving and how is that benefiting you?",
+				"value": "We have solved the issue of tracking deferred revenue manually.  We have definitely realized time savings by having this system."
+			}
+		},
+		"secondary_answers": {
+			"meets_requirements": {
+				"text": "Meets Requirements",
+				"value": 5.0
+			},
+			"ease_of_use": {
+				"text": "Ease of Use",
+				"value": 5.0
+			},
+			"quality_of_support": {
+				"text": "Quality of Support",
+				"value": 5.0
+			},
+			"ease_of_admin": {
+				"text": "Ease of Admin",
+				"value": 6.0
+			},
+			"ease_of_doing_business_with": {
+				"text": "Has the product been a good partner in doing business?",
+				"value": 5.0
+			}
+		},
+		"verified_current_user": false,
+		"is_business_partner": true,
+		"review_source": "Organic review. This review was written entirely without invitation or incentive from G2, a seller, or an affiliate.",
+		"votes_up": 1,
+		"votes_down": 0,
+		"votes_total": 1,
+		"user_id": "e15354fd-2560-4e8c-9ec9-6df85998cf15",
+		"user_name": "Jennifer Oehlerts",
+		"user_image_url": "https://media.licdn.com/mpr/mprx/0_sNXFMQq3GTx8Y4S7q-NZMXv286WTOUS749rZMLqyxigK30sf9tqIc58tmedxgyu_UB6JnCQLzfWr",
+		"country_name": "United States",
+		"regions": ["Americas", "North America"],
+		"submitted_at": "2014-06-10T13:57:29.694-05:00",
+		"updated_at": "2014-06-10T13:58:44.974-05:00",
+		"moderated_at": null,
+		"product_id": "e83d22a2-8330-4ba0-8262-2fcfb76382ab",
+		"reference_user_consent": "unanswered",
+		"status": "approved"
+	},
+	"relationships": {
+		"product": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/product",
+				"related": "https://data.g2.com/api/v1/survey-responses/23875/product"
+			}
+		},
+		"questions": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/questions",
+				"related": "https://data.g2.com/api/v1/survey-responses/23875/questions"
+			}
+		},
+		"answers": {
+			"links": {
+				"self": "https://data.g2.com/api/v1/survey-responses/23875/relationships/answers",
+				"related": "https://data.g2.com/api/v1/survey-responses/23875/answers"
+			}
+		}
+	}
+}]
