@@ -93,35 +93,6 @@
 	min-width: 280px;
 }
 
-.rev-verified-user:before {
-  content: "Verified User";
-  position: absolute;
-  top: calc(var(--box-padding) + var(--user-icon-size) + 2px);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  left: calc(var(--box-padding) + var(--user-icon-size) + 30px);
-  transform-origin: left;
-  z-index: 2;
-}
-
-.rev-verified-user:after {
-	content: "✔";
-  font-size: 11px;
-  position: absolute;
-  color: #fff;
-  z-index: 1;
-  top: calc(var(--box-padding) + var(--user-icon-size));
-  left: calc(var(--box-padding) + var(--user-icon-size) + 10px);
-  background: darkgreen;
-  width: 15px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
 .rev-user-icon {
 	display: flex;
 	flex-flow: column;
@@ -132,7 +103,7 @@
 	min-height: var(--user-icon-size);
 }
 
-.rev-user-icon > span:first-child {
+.rev-user-icon > span.user-image {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -148,14 +119,14 @@
 	font-family: var(--user-icon-font-family);
 	font-size: var(--user-icon-font-size);
 	font-weight: var(--user-icon-font-weight);
-	overflow: hidden;
+  overflow: hidden;
 }
 
-.rev-user-icon > span:first-child img {
+.rev-user-icon > span.user-image img {
 	width: 100%;
 }
 
-.rev-user-icon > span:nth-child(2) {
+.rev-user-icon > span.user-name {
 	font-family: var(--user-name-font-family);
 	font-size: var(--user-name-font-size);
 	line-height: 1.2em;
@@ -181,7 +152,36 @@
 	position: absolute;
 	top: calc(var(--box-padding));
 	right: 15px;
-	letter-spacing: -3px;
+  letter-spacing: -3px;
+}
+
+.rev-verified-user .rev-rate:before {
+  content: "Verified User";
+  position: absolute;
+  top: 100%;
+  font-size: 10px;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  left: 23px;
+  z-index: 2;
+}
+
+.rev-verified-user .rev-rate:after {
+	content: "✔";
+  font-size: 11px;
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 100%;
+  left: 2px;
+  background: darkgreen;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .rev-rate i {
