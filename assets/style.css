@@ -286,3 +286,14 @@
 	height: calc(1.2em * var(--a-clip-lines));
 	*/
 }
+
+@media(max-width:599px){
+  .wp-g2-rev-front {
+    flex-flow:column;
+  }
+  .wp-g2-rev-front > div{
+    width:100%;
+    max-width: 400px;
+    margin:0 auto;
+  }
+}
