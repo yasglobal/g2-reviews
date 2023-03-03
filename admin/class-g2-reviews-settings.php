@@ -93,7 +93,7 @@ class G2_Reviews_Settings {
 		<div class="wrap">
 			<?php
 			// Print message when API key fetch or not.
-			print esc_html($g2_message);
+			print esc_html( $g2_message );
 			?>
 
 			<h2>
