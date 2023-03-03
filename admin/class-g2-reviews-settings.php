@@ -93,7 +93,7 @@ class G2_Reviews_Settings {
 		<div class="wrap">
 			<?php
 			// Print message when API key fetch or not.
-			print $g2_message;
+			print esc_html($g2_message);
 			?>
 
 			<h2>
@@ -203,6 +203,11 @@ class G2_Reviews_Settings {
 	}
 }
 
+/**
+ * Loads a CSS file on the front-end.
+ *
+ * @return void
+ */
 function wpb_load_style() {
 	wp_enqueue_style( 'G2-admin-style', '/wp-content/plugins/g2-reviews/assets/admin-style.css', array(), '201903289' );
 }
