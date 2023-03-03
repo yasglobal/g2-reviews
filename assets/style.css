@@ -66,9 +66,7 @@
 	font-family: var(--global-font);
 	gap: var(--box-gap);
 	width: var(--rev-container-width);
-	margin:
-		var(--rev-container-margin-top) var(--rev-container-margin-right)
-		var(--rev-container-margin-bottom) var(--rev-container-margin-left);
+	margin: var(--rev-container-margin-top) var(--rev-container-margin-right) var(--rev-container-margin-bottom) var(--rev-container-margin-left);
 	box-sizing: border-box;
 }
 

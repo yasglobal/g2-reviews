@@ -44,7 +44,7 @@ foreach ( $page_data as $data ) {
 		<div class="rev-qa-scroll">
 			<div class="rev-topic">' . $data->title . '</div>';
 	foreach ( $comment_answers as $queston_answer ) {
-		if ( ! empty( $queston_answer->value ) && $queston_answer->value != 'NA' ) {
+		if ( ! empty( $queston_answer->value ) && 'NA' != $queston_answer->value ) {
 			$reviews_data .= '<div class="rev-q">' . $queston_answer->text . '</div>
 			<div class="rev-a">' . $queston_answer->value . '</div>';
 		}
