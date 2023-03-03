@@ -1,6 +1,8 @@
 <?php
 /**
- * G2 Reviews Widget.
+ * Class G2_Reviews_Widget
+ *
+ * A widget for displaying G2 reviews.
  *
  * @package G2Reviews
  */
@@ -34,11 +36,11 @@ class G2_Reviews_Widget extends WP_Widget {
 		// Get the widget title.
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo esc_html( $args['before_title'] ). esc_html( $titl ) . esc_html( $args['after_title'] );
+			echo esc_html( $args['before_title'] ). ' ' .esc_html( $titl ). ' ' .esc_html( $args['after_title'] );
 		}
 
 		$file_call = 'widget';
-		$output   = esc_html( '' );
+		$output    = esc_html( '' );
 		if ( get_option( 'g2_reviews_settings' ) ) {
 			include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
 		} elseif ( is_user_logged_in() ) {
@@ -71,16 +73,16 @@ class G2_Reviews_Widget extends WP_Widget {
 		);
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-				<?php _e( 'Title:' ); ?>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>">
+				<?php esc_html_e( 'Title:' ); ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_html( esc_attr( $title ) ); ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'review_limit' ); ?>">
+			<label for="<?php echo esc_attr( $this->get_field_id( 'review_limit' ) ); ?>">
 				<?php _e( 'Review Limit' ); ?>
 			</label>
-			<select class="widefat" id="<?php echo $this->get_field_id( 'review_limit' ); ?>" name="<?php echo $this->get_field_name( 'review_limit' ); ?>">
+			<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'review_limit' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'review_limit' ) ); ?>">
 				<?php foreach ( $options as $option ) : ?>
 					<option value="<?php echo esc_attr( $option ); ?>" <?php selected( $review_limit, $option ); ?>><?php echo esc_html( $option ); ?></option>
 				<?php endforeach; ?>
@@ -97,7 +99,7 @@ class G2_Reviews_Widget extends WP_Widget {
 	 * @return array The updated instance settings.
 	 */
 	public function update( $new_instance, $old_instance ) {
-		// Save widget settings
+		// Save widget settings.
 		$instance                 = $old_instance;
 		$instance['title']        = sanitize_text_field( $new_instance['title'] );
 		$instance['review_limit'] = sanitize_text_field( $new_instance['review_limit'] );
@@ -105,9 +107,14 @@ class G2_Reviews_Widget extends WP_Widget {
 	}
 }
 
+/**
+ * Registers and loads the G2 Reviews Widget Css.
+ *
+ * @return void
+ */
 function wpb_load_widget() {
 	register_widget( 'G2_Reviews_Widget' );
-	wp_enqueue_style( 'G2-style', '/wp-content/plugins/g2-reviews/assets/style.css', array(), '' );
+	wp_enqueue_style( 'G2-style', '/wp-content/plugins/g2-reviews/assets/style.css', array(), '1.0.0' );
 }
 
 add_action( 'widgets_init', 'wpb_load_widget' );
