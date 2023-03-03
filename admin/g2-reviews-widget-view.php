@@ -4,11 +4,12 @@
  *
  * @package G2Reviews
  */
+
 global $wpdb;
 
 $output .= '<div class="wp-g2-reviews reviews-' . $file_call . '">
 	<div class="wp-g2-rev-front">';
-if ( $file_call === 'widget' ) {
+if ('widget'===  $file_call) {
 	$item = $instance['review_limit'];
 } else {
 	$item      = $atts['review-items'];
@@ -24,7 +25,7 @@ foreach ( $page_data as $data ) {
 	$other_attributes  = maybe_unserialize( $data->other_attributes );
 	$newDate           = date( 'd M, Y', strtotime( $other_attributes->submitted_at ) );
 	$newDateAttr       = date( 'Y-m-d', strtotime( $other_attributes->submitted_at ) );
-	$verified          = ( $other_attributes->verified_current_user == 1 ) ? '<i></i>' : '';
+	$verified          = (1 ==  $other_attributes->verified_current_user) ? '<i></i>' : '';
 	$g2_user           = maybe_unserialize( $data->user );
 	if ( strpos( $g2_user['user_image_url'], 'http' ) === false ||
 		! preg_match( '/\.(svg|png|jpeg)$/', $g2_user['user_image_url'] ) ) {
