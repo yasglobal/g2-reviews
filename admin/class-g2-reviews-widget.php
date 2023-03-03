@@ -21,27 +21,38 @@ class G2_Reviews_Widget extends WP_Widget {
 		);
 	}
 
+	/**
+	 * Outputs the content of the widget.
+	 *
+	 * @param array $args     The widget arguments.
+	 * @param array $instance The widget instance.
+	 */
 	public function widget( $args, $instance ) {
 		// Output the widget frontend.
-		echo $args['before_widget'];
+		echo esc_html( $args['before_widget'] );
 
 		// Get the widget title.
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			echo esc_html( $args['before_title'] ). esc_html( $titl ) . esc_html( $args['after_title'] );
 		}
 
-		$fileCall = 'widget';
-		$output   = '';
+		$file_call = 'widget';
+		$output   = esc_html( '' );
 		if ( get_option( 'g2_reviews_settings' ) ) {
 			include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
 		} elseif ( is_user_logged_in() ) {
 			$output = 'Please fill G2 API  <a href="/wp-admin/admin.php?page=g2-reviews-settings" title="G2 API Setting">here</a>.';
 		}
-		echo $output;
-		echo $args['after_widget'];
+		echo esc_html( $output );
+		echo esc_html( $args['after_widget'] );
 	}
 
+	/**
+	 * Outputs the widget settings form.
+	 *
+	 * @param array $instance The widget instance.
+	 */
 	public function form( $instance ) {
 		// Output the widget settings form.
 		$title        = isset( $instance['title'] ) ? $instance['title'] : '';
@@ -78,6 +89,13 @@ class G2_Reviews_Widget extends WP_Widget {
 		<?php
 	}
 
+	/**
+	 * Updates the widget instance settings.
+	 *
+	 * @param array $new_instance The new instance settings.
+	 * @param array $old_instance The old instance settings.
+	 * @return array The updated instance settings.
+	 */
 	public function update( $new_instance, $old_instance ) {
 		// Save widget settings
 		$instance                 = $old_instance;

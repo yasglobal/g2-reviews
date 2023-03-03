@@ -6,9 +6,9 @@
  */
 global $wpdb;
 
-$output .= '<div class="wp-g2-reviews reviews-' . $fileCall . '">
+$output .= '<div class="wp-g2-reviews reviews-' . $file_call . '">
 	<div class="wp-g2-rev-front">';
-if ( $fileCall === 'widget' ) {
+if ( $file_call === 'widget' ) {
 	$item = $instance['review_limit'];
 } else {
 	$item      = $atts['review-items'];
