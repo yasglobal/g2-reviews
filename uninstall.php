@@ -19,4 +19,4 @@ delete_option( 'g2_reviews_settings' );
 global $wpdb;
 
 $table_name = $wpdb->prefix . 'g2_reviews';
-$wpdb->query( $wpdb->prepare( 'DROP TABLE IF EXISTS %s', $table_name ) );
+$wpdb->drop_table( $table_name );
