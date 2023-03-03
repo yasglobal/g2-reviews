@@ -22,3 +22,7 @@ project.properties
 
 # Windows junk
 Thumbs.db
+assets/Front.html
+front2/front2.html
+front2/script2.js
+front2/style2.css
