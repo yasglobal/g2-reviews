@@ -17,7 +17,12 @@ if ( 'widget' === $file_call ) {
 	$output   .= '<svg style="display:none"><style>:root .wp-g2-reviews {--box-number:' . $items_row . ';}</style></svg>';
 }
 
-$page_data    = $wpdb->get_results( 'SELECT * FROM wp_g2_reviews LIMIT ' . $item );
+$page_data    = $wpdb->get_results(
+	$wpdb->prepare(
+		'SELECT * FROM wp_g2_reviews LIMIT %d',
+		$item
+	)
+);
 $reviews_data = '';
 foreach ( $page_data as $data ) {
 	$comment_answers   = maybe_unserialize( $data->comment_answers );
