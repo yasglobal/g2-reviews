@@ -9,8 +9,8 @@ global $wpdb;
 
 $output .= '<div class="wp-g2-reviews reviews-' . $file_call . '">
 	<div class="wp-g2-rev-front">';
-if ('widget' === $file_call) {
-    $item = $instance['review_limit'];
+if ( 'widget' === $file_call ) {
+	$item = $instance['review_limit'];
 } else {
 	$item      = $atts['review-items'];
 	$items_row = $atts['items-row'];
@@ -20,13 +20,13 @@ if ('widget' === $file_call) {
 $page_data    = $wpdb->get_results( 'SELECT * FROM wp_g2_reviews LIMIT ' . $item );
 $reviews_data = '';
 foreach ( $page_data as $data ) {
-    $comment_answers = maybe_unserialize($data->comment_answers);
-    $secondary_answers = maybe_unserialize($data->secondary_answers);
-    $other_attributes = maybe_unserialize($data->other_attributes);
-    $new_date = date('d M, Y', strtotime($other_attributes->submitted_at));
-    $new_date_attr = date('Y-m-d', strtotime($other_attributes->submitted_at));
-    $verified = (1 == $other_attributes->verified_current_user) ? '<i></i>' : '';
-    $g2_user = maybe_unserialize($data->user);
+	$comment_answers   = maybe_unserialize( $data->comment_answers );
+	$secondary_answers = maybe_unserialize( $data->secondary_answers );
+	$other_attributes  = maybe_unserialize( $data->other_attributes );
+	$new_date          = date( 'd M, Y', strtotime( $other_attributes->submitted_at ) );
+	$new_date_attr     = date( 'Y-m-d', strtotime( $other_attributes->submitted_at ) );
+	$verified          = ( 1 == $other_attributes->verified_current_user ) ? '<i></i>' : '';
+	$g2_user           = maybe_unserialize( $data->user );
 	if ( strpos( $g2_user['user_image_url'], 'http' ) === false ||
 		! preg_match( '/\.(svg|png|jpeg)$/', $g2_user['user_image_url'] ) ) {
 		$g2_user_image = substr( $g2_user['user_name'], 0, 1 );

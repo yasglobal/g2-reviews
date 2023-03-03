@@ -15,7 +15,7 @@ function g2_review_shortcode( $atts ) {
 		$atts
 	);
 
-	$output   = '';
+	$output    = '';
 	$file_call = 'shortcode';
 	delete_option( 'g2_reviews_message' );
 	if ( get_option( 'g2_reviews_settings' ) ) {
