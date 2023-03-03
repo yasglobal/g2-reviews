@@ -23,9 +23,9 @@ foreach ( $page_data as $data ) {
 	$comment_answers   = maybe_unserialize( $data->comment_answers );
 	$secondary_answers = maybe_unserialize( $data->secondary_answers );
 	$other_attributes  = maybe_unserialize( $data->other_attributes );
-	$new_date          = date( 'd M, Y', strtotime( $other_attributes->submitted_at ) );
-	$new_date_attr     = date( 'Y-m-d', strtotime( $other_attributes->submitted_at ) );
-	$verified          = ( 1 == $other_attributes->verified_current_user ) ? '<i></i>' : '';
+	$new_date          = gmdate( 'd M, Y', strtotime( $other_attributes->submitted_at ) );
+	$new_date_attr     = gmdate( 'Y-m-d', strtotime( $other_attributes->submitted_at ) );
+	$verified          = ( 1 === $other_attributes->verified_current_user ) ? '<i></i>' : '';
 	$g2_user           = maybe_unserialize( $data->user );
 	if ( strpos( $g2_user['user_image_url'], 'http' ) === false ||
 		! preg_match( '/\.(svg|png|jpeg)$/', $g2_user['user_image_url'] ) ) {
@@ -44,7 +44,7 @@ foreach ( $page_data as $data ) {
 		<div class="rev-qa-scroll">
 			<div class="rev-topic">' . $data->title . '</div>';
 	foreach ( $comment_answers as $queston_answer ) {
-		if ( ! empty( $queston_answer->value ) && 'NA' != $queston_answer->value ) {
+		if ( ! empty( $queston_answer->value ) && 'NA' !== $queston_answer->value ) {
 			$reviews_data .= '<div class="rev-q">' . $queston_answer->text . '</div>
 			<div class="rev-a">' . $queston_answer->value . '</div>';
 		}
