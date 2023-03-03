@@ -16,7 +16,7 @@ function g2_review_shortcode( $atts ) {
 	);
 
 	$output   = '';
-	$fileCall = 'shortcode';
+	$file_call = 'shortcode';
 	delete_option( 'g2_reviews_message' );
 	if ( get_option( 'g2_reviews_settings' ) ) {
 		include G2_REVIEWS_PATH . 'admin/g2-reviews-widget-view.php';
