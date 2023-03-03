@@ -1,5 +1,4 @@
 <?php
-
 /**
  * G2 Reviews Uninstall.
  *
