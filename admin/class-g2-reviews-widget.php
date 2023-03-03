@@ -10,7 +10,9 @@
 if ( ! class_exists( 'WP_Widget' ) ) {
 	require_once ABSPATH . 'wp-includes/class-wp-widget.php';
 }
-
+/**
+ * Create G2_Reviews_Widget Class for widget.
+ */
 class G2_Reviews_Widget extends WP_Widget {
 	/**
 	 * Class constructor.
@@ -36,7 +38,7 @@ class G2_Reviews_Widget extends WP_Widget {
 		// Get the widget title.
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo esc_html( $args['before_title'] ). ' ' .esc_html( $titl ). ' ' .esc_html( $args['after_title'] );
+			echo esc_html( $args['before_title'] ) . ' ' . esc_html( $titl ) . ' ' . esc_html( $args['after_title'] );
 		}
 
 		$file_call = 'widget';
@@ -80,7 +82,7 @@ class G2_Reviews_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'review_limit' ) ); ?>">
-				<?php _e( 'Review Limit' ); ?>
+				<?php esc_html_e( 'Review Limit' ); ?>
 			</label>
 			<select class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'review_limit' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'review_limit' ) ); ?>">
 				<?php foreach ( $options as $option ) : ?>
