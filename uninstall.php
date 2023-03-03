@@ -9,14 +9,14 @@
  */
 
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
-    exit;
+	exit;
 }
 
-// Delete the plugin options
+// Delete the plugin options.
 delete_option( 'g2_reviews_settings' );
 
-// Delete the review table
+// Delete the review table.
 global $wpdb;
 
 $table_name = $wpdb->prefix . 'g2_reviews';
-$wpdb->query( "DROP TABLE IF EXISTS $table_name" );
+$wpdb->query( $wpdb->prepare( 'DROP TABLE IF EXISTS %s', $table_name ) );

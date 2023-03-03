@@ -20,7 +20,7 @@ class G2_Reviews {
 	 */
 	public $version = '0.0.1';
 
-	 /**
+	/**
 	 * G2 Reviews Table.
 	 *
 	 * @var string
@@ -119,8 +119,8 @@ class G2_Reviews {
 				comment_answers LONGTEXT,
 				secondary_answers LONGTEXT,
 				verified_current_user BOOLEAN,
-				user LONGTEXT,
 				country_region VARCHAR(255),
+				user LONGTEXT,
 				other_attributes LONGTEXT,
 				submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 				updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
