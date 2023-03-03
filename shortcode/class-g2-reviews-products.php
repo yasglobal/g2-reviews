@@ -5,8 +5,15 @@
  * @package G2Reviews
  */
 
+/**
+ * Create g2_review_shortcode Class for shortcode.
+ *
+ * @param array $atts Shortcode attributes.
+ *
+ * @return string The shortcode output.
+ */
 function g2_review_shortcode( $atts ) {
-	// Merge the user-defined attributes with the default attributes
+	// Merge the user-defined attributes with the default attributes.
 	$atts = shortcode_atts(
 		array(
 			'review-items' => '3',

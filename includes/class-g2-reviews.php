@@ -106,7 +106,7 @@ class G2_Reviews {
 
 		update_option( 'g2_reviews_plugin_version', G2_REVIEWS_VERSION );
 
-		if ( ! $wpdb->get_var( "SHOW TABLES LIKE '{$wpdb->prefix}g2_reviews';" ) ) {
+		if ( ! $wpdb->get_var( $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->prefix . 'g2_reviews' ) ) ) {
 			$collate = '';
 			if ( $wpdb->has_cap( 'collation' ) ) {
 				$collate = $wpdb->get_charset_collate();
